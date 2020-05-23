@@ -10,13 +10,7 @@ class Index extends Component {
   }
   render() { 
     return (
-      <Container fluid>
-        <Row>
-          <Col size="md-6">
-            <BusinessCard {...db.businesses[0]} />
-          </Col>
-        </Row>
-      </Container>
+      <BusinessCard {...db.businesses[0]} />
     );
   }
 }

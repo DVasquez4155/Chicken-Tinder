@@ -1,0 +1,76 @@
+main {
+    background-color: rgba(211, 211, 211, 0.25);
+    max-width: 100%;
+    padding: 0;
+}
+.main {
+    max-width: 375px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.profile {
+    box-shadow: 0 2px 10px 0 rgba(84,84,84,0.75);
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: bold;
+}
+.profile, .profile >.img {
+    height: 667px;
+    max-height: calc(100vh - 145px);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.profile > .img {
+    transform: 1s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .profile > .img:hover {
+    background-size: auto 150%;
+} */
+.profile > .information {
+    position: absolute;
+    bottom: 25px;
+}
+.card-body {
+    background-color: lightsalmon;
+}
+.card {
+    max-width: 360px;
+}
+.interactive-icon > .col, .transactions{
+    text-align: center;
+}
+.interactive-icon > .col > button {
+    border-width: 0;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.21);
+    
+    width: 50px; 
+    height: 50px; 
+    padding: 7px 10px; 
+    border-radius: 25px; 
+    text-align: center; 
+}
+.interactive-icon > .col > .undo {
+    color: gold;
+}
+.interactive-icon > .col > .times {
+    color: salmon;
+}
+.interactive-icon > .col > .question {
+    color: #b5b;
+}
+.interactive-icon > .col > .check {
+    color: mediumaquamarine;
+}
+.interactive-icon > .col > .share {
+    color: teal;
+}

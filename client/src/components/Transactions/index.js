@@ -16,7 +16,7 @@ const transactionTypes = {
 }
 const Transactions = (props) => {
     return (
-    <Row>
+    <Row className='transactions'>
         {props.transactions.map(transaction => (
             transactionTypes[transaction]
         ))}

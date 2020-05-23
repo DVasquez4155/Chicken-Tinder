@@ -1,49 +1,95 @@
 import React from 'react';
-import { Card, Row, Col } from "react-bootstrap";
+import { Row, Col, Container, Button } from "react-bootstrap";
 
 import Transactions from "../Transactions";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faDotCircle, faDollarSign } from '@fortawesome/free-solid-svg-icons'
+import { faQuestion, faCheck, faTimes, faUndo, faShare } from '@fortawesome/free-solid-svg-icons'
 
-const BusinessCard = (props) => {
-    function printStars(amount) {
+require('./index.css')
+
+class BusinessCard extends React.Component {
+    printStars(amount) {
         const stars = [];
         for (var i = 0; i < amount; i++) {
             stars.push(<FontAwesomeIcon icon={faStar} />)
         }
         return stars
     }
-    function printDollar(amount) {
+    printDollar(amount) {
         const dollars = [];
         for (var i = 0; i < amount; i++) {
             dollars.push(<FontAwesomeIcon icon={faDollarSign} />)
         }
         return dollars
     }
-    return ( 
-        <Card>
-            <Card.Img variant="top" src={props.image_url} />
-            <Card.Body>
-                <Card.Title>{props.name}</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">
-                        <Row>
-                            <Col><Card.Text>{printStars(props.rating)}</Card.Text></Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <Card.Text>
-                                    {printDollar(props.price.length)}
-                                    <FontAwesomeIcon icon={faDotCircle} transform="shrink-6"/>
-                                    {props.categories[0].title}
-                                </Card.Text>
-                            </Col>
-                        </Row>
-                    </Card.Subtitle>
-                <Transactions {...props}/>
-            </Card.Body>
-        </Card>
-    );
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        console.log(this)
+        return (
+        <main>
+            <Container className='main'>
+                <Row>
+                    <Col xs sm md lg>
+                        <div className='profile'>
+                            <div class='img' style={{backgroundImage:`url(${this.props.image_url})`}}/>
+                            <Container className='information'>
+                                <span>{this.props.name}</span>
+                                <Row>
+                                    <Col><span>{this.printStars(this.props.rating)}</span></Col>
+                                </Row>
+                                <Row>
+                                    <Col>
+                                        <span>
+                                            {this.printDollar(this.props.price.length)}
+                                            <span> • </span>
+                                            {this.props.categories.map(catigory => (
+                                                catigory.title
+                                            ))}
+                                        </span>
+                                    </Col>
+                                </Row>
+                                {/* <Transactions {...props}/> */}
+                            </Container>
+                        </div>
+                    </Col>
+                </Row>
+                <Row className='interactive-icon'>
+                    <Col>
+                        <Button className='times'>
+                            <FontAwesomeIcon icon={faTimes}/>
+                        </Button>
+                    </Col>
+                    <Col>
+                        <Button className='question'>
+                            <FontAwesomeIcon icon={faQuestion}/>
+                        </Button>
+                    </Col>
+                    <Col>
+                        <Button className='check'>
+                            <FontAwesomeIcon icon={faCheck}/>
+                        </Button>
+                    </Col>
+                </Row>
+                <Row className='interactive-icon'>
+                    <Col>
+                            <Button className='undo'>
+                                <FontAwesomeIcon icon={faUndo}/>
+                            </Button>
+                        </Col>
+                    <Col>
+                        <Button className='share'>
+                            <FontAwesomeIcon icon={faShare}/>
+                        </Button>
+                    </Col>
+                </Row>
+            </Container>
+        </main>
+        
+    );}
 }
 
 export default BusinessCard;

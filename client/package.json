@@ -9,6 +9,8 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "axios": "^0.18.0",
     "bootstrap": "^4.5.0",
+    "framework7": "^5.7.5",
+    "framework7-react": "^5.7.5",
     "react": "^16.6.3",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.6.3",

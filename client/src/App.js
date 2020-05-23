@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Nav />
+        {/* <Nav /> */}
         <Switch>
           <Route exact path={["/", "/test"]}>
             <Index />
