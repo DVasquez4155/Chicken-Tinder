@@ -33,6 +33,7 @@ class BusinessCard extends React.Component {
             <Container className='main'>
                 <div className='profile'>
                     <div className='img' style={{backgroundImage:`url(${this.props.image_url})`}}/>
+                    <div className='backgroundGradient'/>
                     <Container className='information'>
                         <span>{this.props.name}</span>
                         <Row>

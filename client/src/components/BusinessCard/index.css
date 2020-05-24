@@ -9,18 +9,27 @@ main {
     border-bottom: 15px solid transparent;
     position: relative;
 }
-
+.backgroundGradient {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: inherit;
+    height: 30%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+}
 .profile {
     box-shadow: 0 2px 10px 0 rgba(84,84,84,0.75);
     font-size: 1.25rem;
     color: #fff;
     font-weight: bold;
-}
-.profile, .profile >.img {
+
+    
     height: 667px;
     max-height: calc(100vh - 145px);
     border-radius: 15px;
     margin-bottom: 15px;
+    overflow: hidden;
 }
 .profile > .img {
     transform: 1s;
@@ -35,6 +44,7 @@ main {
 }
 .profile {
     position:relative;
+    /* overflow: auto; */
 }
 .profile .information {
     position: absolute;
