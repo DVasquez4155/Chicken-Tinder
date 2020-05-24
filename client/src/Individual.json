@@ -1,0 +1,96 @@
+{
+    "id": "E8RJkjfdcwgtyoPMjQ_Olg",
+    "alias": "four-barrel-coffee-san-francisco",
+    "name": "Four Barrel Coffee",
+    "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/NBm7cKsFwecEm82oP_-qUg/o.jpg",
+    "is_claimed": true,
+    "is_closed": false,
+    "url": "https://www.yelp.com/biz/four-barrel-coffee-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+    "phone": "+14158964289",
+    "display_phone": "(415) 896-4289",
+    "review_count": 2090,
+    "categories": [
+        {
+            "alias": "coffee",
+            "title": "Coffee & Tea"
+        }
+    ],
+    "rating": 4.0,
+    "location": {
+        "address1": "375 Valencia St",
+        "address2": "",
+        "address3": "",
+        "city": "San Francisco",
+        "zip_code": "94103",
+        "country": "US",
+        "state": "CA",
+        "display_address": [
+            "375 Valencia St",
+            "San Francisco, CA 94103"
+        ],
+        "cross_streets": "15th St"
+    },
+    "coordinates": {
+        "latitude": 37.7670169511878,
+        "longitude": -122.42184275
+    },
+    "photos": [
+        "https://s3-media3.fl.yelpcdn.com/bphoto/NBm7cKsFwecEm82oP_-qUg/o.jpg",
+        "https://s3-media1.fl.yelpcdn.com/bphoto/-_Ks4eF8aZcm3GZgUf5Urg/o.jpg",
+        "https://s3-media1.fl.yelpcdn.com/bphoto/Wym6KBsf9V367ZkFMNtmFQ/o.jpg"
+    ],
+    "price": "$",
+    "hours": [
+        {
+            "open": [
+                {
+                    "is_overnight": false,
+                    "start": "0700",
+                    "end": "2000",
+                    "day": 0
+                },
+                {
+                    "is_overnight": false,
+                    "start": "0700",
+                    "end": "2000",
+                    "day": 1
+                },
+                {
+                    "is_overnight": false,
+                    "start": "0700",
+                    "end": "2000",
+                    "day": 2
+                },
+                {
+                    "is_overnight": false,
+                    "start": "0700",
+                    "end": "2000",
+                    "day": 3
+                },
+                {
+                    "is_overnight": false,
+                    "start": "0700",
+                    "end": "2000",
+                    "day": 4
+                },
+                {
+                    "is_overnight": false,
+                    "start": "0700",
+                    "end": "2000",
+                    "day": 5
+                },
+                {
+                    "is_overnight": false,
+                    "start": "0700",
+                    "end": "2000",
+                    "day": 6
+                }
+            ],
+            "hours_type": "REGULAR",
+            "is_open_now": true
+        }
+    ],
+    "transactions": [
+        "delivery"
+    ]
+}
