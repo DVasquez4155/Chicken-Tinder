@@ -17,13 +17,21 @@ class Index extends React.Component {
   render() {
     var functions = {
       incrementCount: () => {
+        let count = this.state.count + 1;
+        if (count >= this.state.businesses.length) {
+          count = 0;
+        }
         this.setState({
-          count: this.state.count + 1
+          count: count
         });
       },
       decreaseCount: () => {
+        let count = this.state.count - 1;
+        if (count < 0) {
+          count = this.state.businesses.length - 1
+        }
         this.setState({
-          count: this.state.count - 1
+          count: count
         });
       }
     }
