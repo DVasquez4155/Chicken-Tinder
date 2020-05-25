@@ -3,29 +3,64 @@
     position: absolute;
     bottom: 10px;
 } */
-.interactive-icon > .col > button {
+.controls {
+    padding-bottom: 10px;
+}
+.interactive-icon > button > svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.interactive-icon > button {
     border-width: 0;
     background-color: #fff;
     box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.21);
     
-    width: 50px; 
-    height: 50px; 
-    padding: 7px 10px; 
-    border-radius: 25px; 
-    text-align: center; 
+    width: 45px; 
+    height: 45px; 
+    border-radius: 22.5px; 
+    text-align: center;
+    position: relative;
 }
-.interactive-icon > .col > .undo {
-    color: gold;
+.interactive-icon > .large {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 30px; 
 }
-.interactive-icon > .col > .times {
-    color: salmon;
+.interactive-icon {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
 }
-.interactive-icon > .col > .question {
+.interactive-icon > .hide {
+    position: absolute;
+    top: -40px;
+    right: 10px;
     color: #b5b;
 }
-.interactive-icon > .col > .check {
+.interactive-icon > #info {
+    width: 22px; 
+    height: 22px; 
+    border-radius: 11px; 
+    color: #0062cc;
+}
+.interactive-icon > .undo {
+    color: gold;
+}
+.interactive-icon > .times {
+    color: salmon;
+}
+.interactive-icon > .question {
+    color: #b5b;
+}
+.interactive-icon > .check {
     color: mediumaquamarine;
 }
-.interactive-icon > .col > .share {
+.interactive-icon > .share {
     color: teal;
 }

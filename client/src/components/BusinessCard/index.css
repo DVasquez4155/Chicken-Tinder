@@ -1,14 +1,4 @@
-main {
-    background-color: rgba(211, 211, 211, 0.25);
-    max-width: 100%;
-    padding: 0;
-}
-.main {
-    max-width: 375px;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    position: relative;
-}
+
 .backgroundGradient {
     position: absolute;
     left: 0;
@@ -18,20 +8,28 @@ main {
     height: 30%;
     background-image: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
 }
-.profile {
+#profile {
     box-shadow: 0 2px 10px 0 rgba(84,84,84,0.75);
     font-size: 1.25rem;
     color: #fff;
     font-weight: bold;
 
-    
     height: 667px;
-    max-height: calc(100vh - 145px);
+    max-height: calc(100vh - 115px);
     border-radius: 15px;
     margin-bottom: 15px;
-    overflow: hidden;
+    scrollbar-width: none;
+    overflow-y: scroll;
 }
-.profile > .img {
+#profile > .visible {
+    max-height: 100%;
+    position: relative;
+    height: inherit;
+}
+#profile::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+#profile > div > .img {
     transform: 1s;
     position: absolute;
     top: 0;
@@ -42,14 +40,36 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.profile {
+#profile {
+    background-color: #fff;
     position:relative;
     /* overflow: auto; */
 }
-.profile .information {
+#profile > div .information {
     position: absolute;
     bottom: 10px;
 }
-.interactive-icon > .col, .transactions{
+.interactive-icon > .col{
     text-align: center;
+}
+#profile > .detail {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: absolute;
+    color: #545454;
+    font-size: 1rem;
+    text-align: left;
+    display: none;
+}
+#profile.details > .detail {
+    display: inline;
+}
+#profile.details > .visible {
+    max-height: 90%;
+}
+#profile.details > img {
+    bottom: 30px;
+}
+#profile.details > .visible > .information > .row > .col > .interactive-icon {
+    display: none;
 }
