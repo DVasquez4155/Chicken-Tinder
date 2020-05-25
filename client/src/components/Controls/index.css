@@ -49,9 +49,6 @@
     border-radius: 11px; 
     color: #0062cc;
 }
-.interactive-icon > .undo {
-    color: gold;
-}
 .interactive-icon > .times {
     color: salmon;
 }
@@ -60,7 +57,4 @@
 }
 .interactive-icon > .check {
     color: mediumaquamarine;
-}
-.interactive-icon > .share {
-    color: teal;
 }
