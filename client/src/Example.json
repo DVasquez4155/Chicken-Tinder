@@ -1,650 +1,429 @@
 {
     "businesses": [
         {
-            "id": "E8RJkjfdcwgtyoPMjQ_Olg",
-            "alias": "four-barrel-coffee-san-francisco",
-            "name": "Four Barrel Coffee",
-            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/NBm7cKsFwecEm82oP_-qUg/o.jpg",
+            "id": "cCKea_ufuGcxI14fhe84vw",
+            "alias": "cha-cha-sushi-san-jose",
+            "name": "Cha Cha Sushi",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/7Q127O-RwDx_BdHDwgJVkw/o.jpg",
             "is_closed": false,
-            "url": "https://www.yelp.com/biz/four-barrel-coffee-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 2090,
+            "url": "https://www.yelp.com/biz/cha-cha-sushi-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 3365,
             "categories": [
                 {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
+                    "alias": "sushi",
+                    "title": "Sushi Bars"
+                },
+                {
+                    "alias": "japanese",
+                    "title": "Japanese"
                 }
             ],
             "rating": 4.0,
             "coordinates": {
-                "latitude": 37.7670169511878,
-                "longitude": -122.42184275
+                "latitude": 37.2758545677726,
+                "longitude": -121.852952245369
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "547 W Capitol Expy",
+                "address2": "",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95136",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "547 W Capitol Expy",
+                    "San Jose, CA 95136"
+                ]
+            },
+            "phone": "+14082652416",
+            "display_phone": "(408) 265-2416",
+            "distance": 2469.7468231513526
+        },
+        {
+            "id": "jfMK6n5Mln7ilco6r2YXoA",
+            "alias": "q-pot-korean-bbq-and-hot-pot-san-jose",
+            "name": "Q Pot Korean BBQ & Hot Pot",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Q-B-b9qGb3m9TWZn4bYTgQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/q-pot-korean-bbq-and-hot-pot-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 3014,
+            "categories": [
+                {
+                    "alias": "korean",
+                    "title": "Korean"
+                },
+                {
+                    "alias": "hotpot",
+                    "title": "Hot Pot"
+                },
+                {
+                    "alias": "bbq",
+                    "title": "Barbeque"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 37.3056688,
+                "longitude": -121.8119824
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "1610 E Capitol Expy",
+                "address2": "",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95121",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "1610 E Capitol Expy",
+                    "San Jose, CA 95121"
+                ]
+            },
+            "phone": "+16692343095",
+            "display_phone": "(669) 234-3095",
+            "distance": 2941.1884711646408
+        },
+        {
+            "id": "zYljE3M9zSoZdipfFQidpA",
+            "alias": "the-boiling-crab-san-jose",
+            "name": "The Boiling Crab",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ypMzd7CUAYxLZXCISYsksA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/the-boiling-crab-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 3838,
+            "categories": [
+                {
+                    "alias": "cajun",
+                    "title": "Cajun/Creole"
+                },
+                {
+                    "alias": "seafood",
+                    "title": "Seafood"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 37.3064070504506,
+                "longitude": -121.812361478806
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "1631 E Capitol Expy",
+                "address2": "Ste 101",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95121",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "1631 E Capitol Expy",
+                    "Ste 101",
+                    "San Jose, CA 95121"
+                ]
+            },
+            "phone": "+14085326147",
+            "display_phone": "(408) 532-6147",
+            "distance": 3002.1493628805324
+        },
+        {
+            "id": "1H9QxpuJ1go4L7Q6aKYmaw",
+            "alias": "mariscos-la-costa-san-jose",
+            "name": "Mariscos La Costa",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/C-TbdD8kARfHxOfD2QSmfQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/mariscos-la-costa-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 474,
+            "categories": [
+                {
+                    "alias": "mexican",
+                    "title": "Mexican"
+                },
+                {
+                    "alias": "seafood",
+                    "title": "Seafood"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 37.27846,
+                "longitude": -121.8338
             },
             "transactions": [
                 "delivery"
             ],
             "price": "$",
             "location": {
-                "address1": "375 Valencia St",
+                "address1": "4152 Monterey Hwy",
                 "address2": "",
                 "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94103",
+                "city": "San Jose",
+                "zip_code": "95111",
                 "country": "US",
                 "state": "CA",
                 "display_address": [
-                    "375 Valencia St",
-                    "San Francisco, CA 94103"
+                    "4152 Monterey Hwy",
+                    "San Jose, CA 95111"
                 ]
             },
-            "phone": "+14158964289",
-            "display_phone": "(415) 896-4289",
-            "distance": 1267.390156111141
+            "phone": "+14082243339",
+            "display_phone": "(408) 224-3339",
+            "distance": 803.1703951642705
         },
         {
-            "id": "MweAq9W5Vza9XdhO6j-z-w",
-            "alias": "four-barrel-coffee-san-francisco-4",
-            "name": "Four Barrel Coffee",
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/pGF9KNoTR9ERj7khM7xPeQ/o.jpg",
+            "id": "OHXPx6P6DKspv2qVjJN9Iw",
+            "alias": "tony-di-maggios-pizza-san-jose",
+            "name": "Tony Di Maggio's Pizza",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/xLPAFbQVS-v-EeYOSgx_xQ/o.jpg",
             "is_closed": false,
-            "url": "https://www.yelp.com/biz/four-barrel-coffee-san-francisco-4?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 158,
+            "url": "https://www.yelp.com/biz/tony-di-maggios-pizza-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 666,
             "categories": [
                 {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
+                    "alias": "pizza",
+                    "title": "Pizza"
+                },
+                {
+                    "alias": "italian",
+                    "title": "Italian"
                 }
             ],
             "rating": 4.0,
             "coordinates": {
-                "latitude": 37.7289353,
-                "longitude": -122.4036865
+                "latitude": 37.281651,
+                "longitude": -121.838404
+            },
+            "transactions": [
+                "delivery",
+                "pickup"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "3852 Monterey Hwy",
+                "address2": "",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95111",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "3852 Monterey Hwy",
+                    "San Jose, CA 95111"
+                ]
+            },
+            "phone": "+14086297775",
+            "display_phone": "(408) 629-7775",
+            "distance": 1095.7348842381884
+        },
+        {
+            "id": "x0DX2qsBTikXJSDRVex15Q",
+            "alias": "jubba-restaurant-san-jose",
+            "name": "Jubba Restaurant",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/YtLH719gaarmx2iOO1shFg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/jubba-restaurant-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 1094,
+            "categories": [
+                {
+                    "alias": "halal",
+                    "title": "Halal"
+                },
+                {
+                    "alias": "somali",
+                    "title": "Somali"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 37.257396,
+                "longitude": -121.860752
             },
             "transactions": [
                 "delivery"
             ],
             "price": "$$",
             "location": {
-                "address1": "2 Burrows St",
-                "address2": "",
+                "address1": "5330 Terner Way",
+                "address2": "Ste 40",
                 "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94134",
+                "city": "San Jose",
+                "zip_code": "95136",
                 "country": "US",
                 "state": "CA",
                 "display_address": [
-                    "2 Burrows St",
-                    "San Francisco, CA 94134"
+                    "5330 Terner Way",
+                    "Ste 40",
+                    "San Jose, CA 95136"
                 ]
             },
-            "phone": "",
-            "display_phone": "",
-            "distance": 5279.270944712026
+            "phone": "+14084401504",
+            "display_phone": "(408) 440-1504",
+            "distance": 4091.9315818810983
         },
         {
-            "id": "--MEcbyEUxGIuh4jT7vufQ",
-            "alias": "four-barrel-coffee-stand-san-francisco",
-            "name": "Four Barrel Coffee Stand",
-            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/pHqpCxnCBKPaAFyKCCZPQQ/o.jpg",
-            "is_closed": true,
-            "url": "https://www.yelp.com/biz/four-barrel-coffee-stand-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 5,
-            "categories": [
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                }
-            ],
-            "rating": 4.0,
-            "coordinates": {
-                "latitude": 37.7951001816931,
-                "longitude": -122.393751069903
-            },
-            "transactions": [],
-            "price": "$$",
-            "location": {
-                "address1": "1 Sausalito - San Francisco Ferry Bldg",
-                "address2": "",
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94111",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "1 Sausalito - San Francisco Ferry Bldg",
-                    "San Francisco, CA 94111"
-                ]
-            },
-            "phone": "",
-            "display_phone": "",
-            "distance": 2713.499798900704
-        },
-        {
-            "id": "VD527WwvrhE3Nhzf5vaMNw",
-            "alias": "sightglass-coffee-san-francisco-7",
-            "name": "Sightglass Coffee",
-            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/GN9IKSYDBoYeU-ESatS3gw/o.jpg",
+            "id": "VkV85hclKc8saSU4UDNjQQ",
+            "alias": "pekoe-san-jose",
+            "name": "Pekoe",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ce6dy5tUbo3XxSUK6Qht0w/o.jpg",
             "is_closed": false,
-            "url": "https://www.yelp.com/biz/sightglass-coffee-san-francisco-7?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 1843,
-            "categories": [
-                {
-                    "alias": "coffeeroasteries",
-                    "title": "Coffee Roasteries"
-                }
-            ],
-            "rating": 4.0,
-            "coordinates": {
-                "latitude": 37.77696,
-                "longitude": -122.40851
-            },
-            "transactions": [
-                "delivery"
-            ],
-            "price": "$$",
-            "location": {
-                "address1": "270 Seventh St",
-                "address2": "",
-                "address3": null,
-                "city": "San Francisco",
-                "zip_code": "94103",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "270 Seventh St",
-                    "San Francisco, CA 94103"
-                ]
-            },
-            "phone": "+14158611313",
-            "display_phone": "(415) 861-1313",
-            "distance": 399.6773976653476
-        },
-        {
-            "id": "-NbDKVqG170J19MqSQ5q_A",
-            "alias": "the-mill-san-francisco",
-            "name": "The Mill",
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/LjO1o6YyRiOBABqxXURSkw/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/the-mill-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 1156,
+            "url": "https://www.yelp.com/biz/pekoe-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 2274,
             "categories": [
                 {
                     "alias": "coffee",
                     "title": "Coffee & Tea"
                 },
                 {
-                    "alias": "bakeries",
-                    "title": "Bakeries"
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
                 },
                 {
-                    "alias": "desserts",
-                    "title": "Desserts"
+                    "alias": "tea",
+                    "title": "Tea Rooms"
                 }
             ],
             "rating": 4.0,
             "coordinates": {
-                "latitude": 37.7764801534107,
-                "longitude": -122.437750024358
-            },
-            "transactions": [
-                "delivery"
-            ],
-            "price": "$$",
-            "location": {
-                "address1": "736 Divisadero St",
-                "address2": "",
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94117",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "736 Divisadero St",
-                    "San Francisco, CA 94117"
-                ]
-            },
-            "phone": "+14153451953",
-            "display_phone": "(415) 345-1953",
-            "distance": 2197.6008600453874
-        },
-        {
-            "id": "VOoHZDC-dgDUzTSsmgESOQ",
-            "alias": "ritual-coffee-roasters-san-francisco",
-            "name": "Ritual Coffee Roasters",
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/US3QFxMJGdl7XwIk4I12GQ/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/ritual-coffee-roasters-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 1907,
-            "categories": [
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                },
-                {
-                    "alias": "coffeeroasteries",
-                    "title": "Coffee Roasteries"
-                }
-            ],
-            "rating": 3.5,
-            "coordinates": {
-                "latitude": 37.75642,
-                "longitude": -122.42137
-            },
-            "transactions": [
-                "delivery"
-            ],
-            "price": "$$",
-            "location": {
-                "address1": "1026 Valencia St",
-                "address2": "",
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94110",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "1026 Valencia St",
-                    "San Francisco, CA 94110"
-                ]
-            },
-            "phone": "+14156411011",
-            "display_phone": "(415) 641-1011",
-            "distance": 2290.199495731948
-        },
-        {
-            "id": "zEa872CgMv9iaFxsUafE2g",
-            "alias": "red-door-coffee-san-francisco",
-            "name": "Red Door Coffee",
-            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Q6J5DBrOYr8FRp0lTD0H2g/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/red-door-coffee-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 139,
-            "categories": [
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                }
-            ],
-            "rating": 4.0,
-            "coordinates": {
-                "latitude": 37.787385,
-                "longitude": -122.399547
-            },
-            "transactions": [
-                "delivery"
-            ],
-            "price": "$$",
-            "location": {
-                "address1": "111 Minna St",
-                "address2": "",
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94105",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "111 Minna St",
-                    "San Francisco, CA 94105"
-                ]
-            },
-            "phone": "+14159741719",
-            "display_phone": "(415) 974-1719",
-            "distance": 1728.5648961251013
-        },
-        {
-            "id": "jTk2zGDdDSVKk3oA0v37xg",
-            "alias": "pentacle-coffee-san-francisco-2",
-            "name": "Pentacle Coffee",
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/O6N0Sdd9d2Q6scH8j6Kivg/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/pentacle-coffee-san-francisco-2?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 67,
-            "categories": [
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                }
-            ],
-            "rating": 5.0,
-            "coordinates": {
-                "latitude": 37.78117,
-                "longitude": -122.40936
-            },
-            "transactions": [],
-            "price": "$$",
-            "location": {
-                "address1": "64 6th St",
-                "address2": "",
-                "address3": null,
-                "city": "San Francisco",
-                "zip_code": "94103",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "64 6th St",
-                    "San Francisco, CA 94103"
-                ]
-            },
-            "phone": "+14155086258",
-            "display_phone": "(415) 508-6258",
-            "distance": 672.5513440872173
-        },
-        {
-            "id": "v3hMOlyGUQQfGZQMXFNoZg",
-            "alias": "sextant-coffee-roasters-san-francisco",
-            "name": "Sextant Coffee Roasters",
-            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/MdVTLgA1pedGlA45h2BBsg/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/sextant-coffee-roasters-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 202,
-            "categories": [
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                },
-                {
-                    "alias": "coffeeroasteries",
-                    "title": "Coffee Roasteries"
-                }
-            ],
-            "rating": 4.0,
-            "coordinates": {
-                "latitude": 37.7724716,
-                "longitude": -122.4129463
+                "latitude": 37.3145584994999,
+                "longitude": -121.790188997984
             },
             "transactions": [
                 "pickup",
                 "delivery"
             ],
-            "price": "$$",
-            "location": {
-                "address1": "1415 Folsom St",
-                "address2": null,
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94103",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "1415 Folsom St",
-                    "San Francisco, CA 94103"
-                ]
-            },
-            "phone": "+14153551415",
-            "display_phone": "(415) 355-1415",
-            "distance": 378.0345012727742
-        },
-        {
-            "id": "l3CO569of8E_Dw7ITfrqiw",
-            "alias": "grand-coffee-san-francisco",
-            "name": "Grand Coffee",
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Bm0ENfJ6TP76JqkPmnfa1g/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/grand-coffee-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 185,
-            "categories": [
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                }
-            ],
-            "rating": 4.5,
-            "coordinates": {
-                "latitude": 37.75439,
-                "longitude": -122.41846
-            },
-            "transactions": [
-                "delivery"
-            ],
             "price": "$",
             "location": {
-                "address1": "2663 Mission St",
-                "address2": null,
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94110",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "2663 Mission St",
-                    "San Francisco, CA 94110"
-                ]
-            },
-            "phone": "+14156566422",
-            "display_phone": "(415) 656-6422",
-            "distance": 2428.558171005458
-        },
-        {
-            "id": "b-qKz-s2lYfWnIQJ4QukZQ",
-            "alias": "stanza-coffee-san-francisco",
-            "name": "Stanza Coffee",
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/AGV-aajkWAGrPkF8g9Cchg/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/stanza-coffee-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 318,
-            "categories": [
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                }
-            ],
-            "rating": 4.0,
-            "coordinates": {
-                "latitude": 37.7648968,
-                "longitude": -122.4225344
-            },
-            "transactions": [
-                "delivery"
-            ],
-            "price": "$",
-            "location": {
-                "address1": "3126 16th St",
+                "address1": "3276 S White Rd",
                 "address2": "",
                 "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94103",
+                "city": "San Jose",
+                "zip_code": "95148",
                 "country": "US",
                 "state": "CA",
                 "display_address": [
-                    "3126 16th St",
-                    "San Francisco, CA 94103"
+                    "3276 S White Rd",
+                    "San Jose, CA 95148"
                 ]
             },
-            "phone": "+14155538966",
-            "display_phone": "(415) 553-8966",
-            "distance": 1492.2166243573643
+            "phone": "+14088180696",
+            "display_phone": "(408) 818-0696",
+            "distance": 4837.537983236243
         },
         {
-            "id": "Rc9abU8CqE__VBgttD3VyA",
-            "alias": "chapel-hill-coffee-san-francisco",
-            "name": "Chapel Hill Coffee",
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/3x4QsBeVuqbFe5_0IuVmzQ/o.jpg",
+            "id": "k901qMpKUjNES5mFJOComA",
+            "alias": "sweet-rendezvous-san-jose",
+            "name": "Sweet Rendezvous",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/GLLb-DwfXCQJ_1Mnlxk3Ew/o.jpg",
             "is_closed": false,
-            "url": "https://www.yelp.com/biz/chapel-hill-coffee-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 65,
+            "url": "https://www.yelp.com/biz/sweet-rendezvous-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 589,
             "categories": [
                 {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                }
-            ],
-            "rating": 4.0,
-            "coordinates": {
-                "latitude": 37.794135537286,
-                "longitude": -122.404256947339
-            },
-            "transactions": [
-                "delivery"
-            ],
-            "price": "$$",
-            "location": {
-                "address1": "670 Commercial St",
-                "address2": "",
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94111",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "670 Commercial St",
-                    "San Francisco, CA 94111"
-                ]
-            },
-            "phone": "",
-            "display_phone": "",
-            "distance": 2164.265837385157
-        },
-        {
-            "id": "ywuPgzXcP4l1viSteduK9A",
-            "alias": "ritual-coffee-roasters-san-francisco-5",
-            "name": "Ritual Coffee Roasters",
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ujrvwgbpU1KmV2IpkFqjsw/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/ritual-coffee-roasters-san-francisco-5?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 331,
-            "categories": [
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                }
-            ],
-            "rating": 4.0,
-            "coordinates": {
-                "latitude": 37.77646571106,
-                "longitude": -122.42434780212
-            },
-            "transactions": [
-                "delivery"
-            ],
-            "price": "$$",
-            "location": {
-                "address1": "432B Octavia St",
-                "address2": "",
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94102",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "432B Octavia St",
-                    "San Francisco, CA 94102"
-                ]
-            },
-            "phone": "+14158650989",
-            "display_phone": "(415) 865-0989",
-            "distance": 1020.7980089221145
-        },
-        {
-            "id": "I0UVBT1-k0LqUICRLr9l5A",
-            "alias": "dynamo-donut-and-coffee-san-francisco-4",
-            "name": "Dynamo Donut & Coffee",
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Rv_4ShGRhQzJwIll6HoXUQ/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/dynamo-donut-and-coffee-san-francisco-4?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 1874,
-            "categories": [
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
+                    "alias": "desserts",
+                    "title": "Desserts"
                 },
-                {
-                    "alias": "donuts",
-                    "title": "Donuts"
-                },
-                {
-                    "alias": "cakeshop",
-                    "title": "Patisserie/Cake Shop"
-                }
-            ],
-            "rating": 4.0,
-            "coordinates": {
-                "latitude": 37.752971,
-                "longitude": -122.407676
-            },
-            "transactions": [
-                "delivery"
-            ],
-            "price": "$",
-            "location": {
-                "address1": "2760 24th St",
-                "address2": "",
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94110",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "2760 24th St",
-                    "San Francisco, CA 94110"
-                ]
-            },
-            "phone": "+14159201978",
-            "display_phone": "(415) 920-1978",
-            "distance": 2584.928947773568
-        },
-        {
-            "id": "CnQ6Uzm6Jrz0L2RwvVsGvA",
-            "alias": "fk-reserve-san-francisco",
-            "name": "FK Reserve",
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/JxkF2yRrHLO7v8x9SScG5w/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/fk-reserve-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 32,
-            "categories": [
                 {
                     "alias": "icecream",
                     "title": "Ice Cream & Frozen Yogurt"
-                },
-                {
-                    "alias": "desserts",
-                    "title": "Desserts"
-                }
-            ],
-            "rating": 4.0,
-            "coordinates": {
-                "latitude": 37.77609,
-                "longitude": -122.40824
-            },
-            "transactions": [],
-            "price": "$$",
-            "location": {
-                "address1": "1123 Folsom St",
-                "address2": "",
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94103",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "1123 Folsom St",
-                    "San Francisco, CA 94103"
-                ]
-            },
-            "phone": "+14153719050",
-            "display_phone": "(415) 371-9050",
-            "distance": 384.9082340562312
-        },
-        {
-            "id": "PrlH7YcQ22m9DyuWbxJjMA",
-            "alias": "anthonys-cookies-san-francisco-2",
-            "name": "Anthony's Cookies",
-            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/6ZXuANt_JBmtSeAHbG5sYQ/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/anthonys-cookies-san-francisco-2?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 1681,
-            "categories": [
-                {
-                    "alias": "bakeries",
-                    "title": "Bakeries"
-                },
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
                 }
             ],
             "rating": 4.5,
             "coordinates": {
-                "latitude": 37.7502,
-                "longitude": -122.42013
+                "latitude": 37.2492499194819,
+                "longitude": -121.845885111639
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "668 Blossom Hill Rd",
+                "address2": "",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95123",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "668 Blossom Hill Rd",
+                    "San Jose, CA 95123"
+                ]
+            },
+            "phone": "+14082255004",
+            "display_phone": "(408) 225-5004",
+            "distance": 4012.835077176557
+        },
+        {
+            "id": "Yl_lQSTj32fe_JnNHGLXIw",
+            "alias": "pho-y-1-san-jose",
+            "name": "Pho Y #1",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Uy9wRP9OyFM3WU1fobhhyQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/pho-y-1-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 1299,
+            "categories": [
+                {
+                    "alias": "vietnamese",
+                    "title": "Vietnamese"
+                },
+                {
+                    "alias": "noodles",
+                    "title": "Noodles"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 37.306181,
+                "longitude": -121.81068
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "1660 E Capitol Expy",
+                "address2": "",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95121",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "1660 E Capitol Expy",
+                    "San Jose, CA 95121"
+                ]
+            },
+            "phone": "+14082741769",
+            "display_phone": "(408) 274-1769",
+            "distance": 3042.517429098856
+        },
+        {
+            "id": "61DSLu7fFcUZ2chA8-A6HQ",
+            "alias": "araujos-mexican-grill-el-paisa-taqueria-san-jose",
+            "name": "Araujo's Mexican Grill / El Paisa Taqueria",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/UjVg45uiJC8R9ACsvYsJFA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/araujos-mexican-grill-el-paisa-taqueria-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 800,
+            "categories": [
+                {
+                    "alias": "tacos",
+                    "title": "Tacos"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 37.29506,
+                "longitude": -121.83443
             },
             "transactions": [
                 "pickup",
@@ -652,175 +431,231 @@
             ],
             "price": "$",
             "location": {
-                "address1": "1417 Valencia St",
+                "address1": "3070 Senter Rd",
                 "address2": "",
                 "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94110",
+                "city": "San Jose",
+                "zip_code": "95111",
                 "country": "US",
                 "state": "CA",
                 "display_address": [
-                    "1417 Valencia St",
-                    "San Francisco, CA 94110"
+                    "3070 Senter Rd",
+                    "San Jose, CA 95111"
                 ]
             },
-            "phone": "+14156559834",
-            "display_phone": "(415) 655-9834",
-            "distance": 2930.497417762558
+            "phone": "+14083000814",
+            "display_phone": "(408) 300-0814",
+            "distance": 1646.0966960789046
         },
         {
-            "id": "qCNfOc-4Sd0Q0Ta37PdwbA",
-            "alias": "red-door-coffee-san-francisco-3",
-            "name": "Red Door Coffee",
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ZOB9VZP4NQIeqyD45RMf4A/o.jpg",
+            "id": "9nguk6zx3SaRP1Ds3NxA2w",
+            "alias": "pop-up-tea-coffee-and-snacks-san-jose",
+            "name": "Pop Up Tea, Coffee & Snacks",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/k2vDLlPyrPAlgqgWDLZakQ/o.jpg",
             "is_closed": false,
-            "url": "https://www.yelp.com/biz/red-door-coffee-san-francisco-3?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 80,
+            "url": "https://www.yelp.com/biz/pop-up-tea-coffee-and-snacks-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 561,
             "categories": [
+                {
+                    "alias": "bubbletea",
+                    "title": "Bubble Tea"
+                },
                 {
                     "alias": "coffee",
                     "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "juicebars",
+                    "title": "Juice Bars & Smoothies"
                 }
             ],
             "rating": 4.0,
             "coordinates": {
-                "latitude": 37.7880967519643,
-                "longitude": -122.396264970303
+                "latitude": 37.267076,
+                "longitude": -121.833671
             },
             "transactions": [
                 "delivery"
             ],
             "price": "$",
             "location": {
-                "address1": "505 Howard St",
-                "address2": "",
+                "address1": "185 Branham Ln",
+                "address2": "Ste 2",
                 "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94105",
+                "city": "San Jose",
+                "zip_code": "95136",
                 "country": "US",
                 "state": "CA",
                 "display_address": [
-                    "505 Howard St",
-                    "San Francisco, CA 94105"
+                    "185 Branham Ln",
+                    "Ste 2",
+                    "San Jose, CA 95136"
                 ]
             },
-            "phone": "+14159741719",
-            "display_phone": "(415) 974-1719",
-            "distance": 1987.4180545056909
+            "phone": "+14084404675",
+            "display_phone": "(408) 440-4675",
+            "distance": 1760.4864141615299
         },
         {
-            "id": "NUrDd8QedLz9G6KFC458sA",
-            "alias": "contraband-coffee-bar-san-francisco",
-            "name": "Contraband Coffee Bar",
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/k_SA1AsTF5L6aX7Wpn3-_g/o.jpg",
+            "id": "95tlD3LE0M_vLLwjcmoNjA",
+            "alias": "high-five-pizza-san-jose-2",
+            "name": "High Five Pizza",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/CCBNSC1ookXXyeNwi4q9Yg/o.jpg",
             "is_closed": false,
-            "url": "https://www.yelp.com/biz/contraband-coffee-bar-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "url": "https://www.yelp.com/biz/high-five-pizza-san-jose-2?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
             "review_count": 757,
             "categories": [
                 {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
+                    "alias": "pizza",
+                    "title": "Pizza"
+                },
+                {
+                    "alias": "bbq",
+                    "title": "Barbeque"
+                },
+                {
+                    "alias": "sandwiches",
+                    "title": "Sandwiches"
                 }
             ],
             "rating": 4.0,
             "coordinates": {
-                "latitude": 37.7910817591518,
-                "longitude": -122.419250557043
-            },
-            "transactions": [],
-            "price": "$$",
-            "location": {
-                "address1": "1415 Larkin St",
-                "address2": "",
-                "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94109",
-                "country": "US",
-                "state": "CA",
-                "display_address": [
-                    "1415 Larkin St",
-                    "San Francisco, CA 94109"
-                ]
-            },
-            "phone": "+14158397388",
-            "display_phone": "(415) 839-7388",
-            "distance": 1785.3150899925056
-        },
-        {
-            "id": "ILp-z7UxaqzHo71jcwxRUQ",
-            "alias": "gateway-croissant-san-francisco-2",
-            "name": "Gateway Croissant",
-            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/WpNOw6kMt9FuL4SE5WAQZQ/o.jpg",
-            "is_closed": false,
-            "url": "https://www.yelp.com/biz/gateway-croissant-san-francisco-2?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 120,
-            "categories": [
-                {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                },
-                {
-                    "alias": "donuts",
-                    "title": "Donuts"
-                },
-                {
-                    "alias": "bagels",
-                    "title": "Bagels"
-                }
-            ],
-            "rating": 3.5,
-            "coordinates": {
-                "latitude": 37.7815197408199,
-                "longitude": -122.416881099343
+                "latitude": 37.26715,
+                "longitude": -121.83224
             },
             "transactions": [
-                "pickup",
                 "delivery"
             ],
-            "price": "$",
+            "price": "$$",
             "location": {
-                "address1": "390 Golden Gate Ave",
-                "address2": "",
+                "address1": "171 Branham Ln",
+                "address2": "Ste 1",
                 "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94102",
+                "city": "San Jose",
+                "zip_code": "95136",
                 "country": "US",
                 "state": "CA",
                 "display_address": [
-                    "390 Golden Gate Ave",
-                    "San Francisco, CA 94102"
+                    "171 Branham Ln",
+                    "Ste 1",
+                    "San Jose, CA 95136"
                 ]
             },
-            "phone": "+14157490202",
-            "display_phone": "(415) 749-0202",
-            "distance": 742.9655934658746
+            "phone": "+14086296800",
+            "display_phone": "(408) 629-6800",
+            "distance": 1720.7082589567801
         },
         {
-            "id": "aF682DEnmO6TBQdLb_dHwg",
-            "alias": "folklores-coffee-traders-san-francisco",
-            "name": "Folklores Coffee Traders",
-            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ClBoecpNaOoq_kuE580HtA/o.jpg",
+            "id": "5hxm3JvyKGhF-fox89dMtQ",
+            "alias": "southern-kitchen-coffee-shop-san-jose",
+            "name": "Southern Kitchen Coffee Shop",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/x58J4Pw0_WGeaMWKbnQrhQ/o.jpg",
             "is_closed": false,
-            "url": "https://www.yelp.com/biz/folklores-coffee-traders-san-francisco?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
-            "review_count": 112,
+            "url": "https://www.yelp.com/biz/southern-kitchen-coffee-shop-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 836,
             "categories": [
                 {
-                    "alias": "coffee",
-                    "title": "Coffee & Tea"
-                },
-                {
-                    "alias": "coffeeroasteries",
-                    "title": "Coffee Roasteries"
+                    "alias": "tradamerican",
+                    "title": "American (Traditional)"
                 },
                 {
                     "alias": "breakfast_brunch",
                     "title": "Breakfast & Brunch"
                 }
             ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 37.28578,
+                "longitude": -121.842011
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "3378 Monterey Hwy",
+                "address2": "",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95111",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "3378 Monterey Hwy",
+                    "San Jose, CA 95111"
+                ]
+            },
+            "phone": "+14082254381",
+            "display_phone": "(408) 225-4381",
+            "distance": 1527.7671098490061
+        },
+        {
+            "id": "op4Pg3lK1qlIGzvfVyhI7w",
+            "alias": "back-a-yard-san-jose-3",
+            "name": "Back A Yard",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/9bS8K8J7BCKN-WEL9z-Zfg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/back-a-yard-san-jose-3?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 394,
+            "categories": [
+                {
+                    "alias": "caribbean",
+                    "title": "Caribbean"
+                },
+                {
+                    "alias": "bbq",
+                    "title": "Barbeque"
+                }
+            ],
             "rating": 4.5,
             "coordinates": {
-                "latitude": 37.7788831,
-                "longitude": -122.4319671
+                "latitude": 37.2999767103452,
+                "longitude": -121.824104
+            },
+            "transactions": [
+                "pickup",
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "1011 Capitol Expy",
+                "address2": "",
+                "address3": null,
+                "city": "San Jose",
+                "zip_code": "95121",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "1011 Capitol Expy",
+                    "San Jose, CA 95121"
+                ]
+            },
+            "phone": "+14089606330",
+            "display_phone": "(408) 960-6330",
+            "distance": 2040.3430654351073
+        },
+        {
+            "id": "fBiBfe9fIOHOqG_VYpYetw",
+            "alias": "teriyaki-dude-san-jose-2",
+            "name": "Teriyaki Dude",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/al0iZsSM0uH51drwvYYB7Q/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/teriyaki-dude-san-jose-2?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 160,
+            "categories": [
+                {
+                    "alias": "newamerican",
+                    "title": "American (New)"
+                },
+                {
+                    "alias": "japanese",
+                    "title": "Japanese"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 37.2793716047399,
+                "longitude": -121.833986797345
             },
             "transactions": [
                 "pickup",
@@ -828,28 +663,247 @@
             ],
             "price": "$",
             "location": {
-                "address1": "1035 Fillmore St",
-                "address2": "",
+                "address1": "4112 Monterey Rd",
+                "address2": "Ste C",
                 "address3": "",
-                "city": "San Francisco",
-                "zip_code": "94115",
+                "city": "San Jose",
+                "zip_code": "95111",
                 "country": "US",
                 "state": "CA",
                 "display_address": [
-                    "1035 Fillmore St",
-                    "San Francisco, CA 94115"
+                    "4112 Monterey Rd",
+                    "Ste C",
+                    "San Jose, CA 95111"
                 ]
             },
-            "phone": "+14156587622",
-            "display_phone": "(415) 658-7622",
-            "distance": 1725.5536647874137
+            "phone": "+14086298626",
+            "display_phone": "(408) 629-8626",
+            "distance": 750.6190977187773
+        },
+        {
+            "id": "QKUIvZHMCchqBMN1tdo7bQ",
+            "alias": "bossmans-pizza-san-jose",
+            "name": "Bossman's Pizza",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/aBvPup4JwQSYKIhejsufpg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/bossmans-pizza-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 274,
+            "categories": [
+                {
+                    "alias": "pizza",
+                    "title": "Pizza"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 37.27396,
+                "longitude": -121.85032
+            },
+            "transactions": [
+                "pickup",
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "418 W Capitol Expy",
+                "address2": null,
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95136",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "418 W Capitol Expy",
+                    "San Jose, CA 95136"
+                ]
+            },
+            "phone": "+14082817337",
+            "display_phone": "(408) 281-7337",
+            "distance": 2345.152089101402
+        },
+        {
+            "id": "9DFDSAoR6SpCXGoZh99HmA",
+            "alias": "kenzo-japanese-restaurant-san-jose",
+            "name": "Kenzo Japanese Restaurant",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/FlDOsti1efb6ky8L-iFiDA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/kenzo-japanese-restaurant-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 2611,
+            "categories": [
+                {
+                    "alias": "japanese",
+                    "title": "Japanese"
+                },
+                {
+                    "alias": "sushi",
+                    "title": "Sushi Bars"
+                },
+                {
+                    "alias": "buffets",
+                    "title": "Buffets"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": 37.2543435400562,
+                "longitude": -121.831146738011
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$$",
+            "location": {
+                "address1": "5465 Snell Ave",
+                "address2": "",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95123",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "5465 Snell Ave",
+                    "San Jose, CA 95123"
+                ]
+            },
+            "phone": "+14082262114",
+            "display_phone": "(408) 226-2114",
+            "distance": 3074.539514875731
+        },
+        {
+            "id": "_Js4p2bJTEMRFXr7U1m7Pw",
+            "alias": "baskin-robbins-san-jose-7",
+            "name": "Baskin Robbins",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/TIx4VAONW-6fixr4aAMSpA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/baskin-robbins-san-jose-7?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 224,
+            "categories": [
+                {
+                    "alias": "icecream",
+                    "title": "Ice Cream & Frozen Yogurt"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 37.26715,
+                "longitude": -121.83224
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "171 Branham Ln",
+                "address2": "Ste 11",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95136",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "171 Branham Ln",
+                    "Ste 11",
+                    "San Jose, CA 95136"
+                ]
+            },
+            "phone": "+14082247153",
+            "display_phone": "(408) 224-7153",
+            "distance": 1720.7082589567801
+        },
+        {
+            "id": "fAP9E7YkOLnRvH4h7xSvBw",
+            "alias": "banh-cuon-tay-ho-san-jose",
+            "name": "Banh Cuon Tay Ho",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/biwRjF14T7wG5VDTLgVJaw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/banh-cuon-tay-ho-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 438,
+            "categories": [
+                {
+                    "alias": "vietnamese",
+                    "title": "Vietnamese"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 37.29768,
+                "longitude": -121.83822
+            },
+            "transactions": [
+                "delivery"
+            ],
+            "price": "$",
+            "location": {
+                "address1": "2895 Senter Rd",
+                "address2": "Ste 110",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95111",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "2895 Senter Rd",
+                    "Ste 110",
+                    "San Jose, CA 95111"
+                ]
+            },
+            "phone": "+14086295229",
+            "display_phone": "(408) 629-5229",
+            "distance": 2099.0846354857817
+        },
+        {
+            "id": "VzeK6EeDB7HvP8CFHdb0RQ",
+            "alias": "thien-long-vietnamese-restaurant-san-jose",
+            "name": "Thien Long Vietnamese Restaurant",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/0H9nKSrvpaT1lO2QdsJCLg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/thien-long-vietnamese-restaurant-san-jose?adjust_creative=t3aK5KrAvEn3s2h_dgtNvg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=t3aK5KrAvEn3s2h_dgtNvg",
+            "review_count": 1032,
+            "categories": [
+                {
+                    "alias": "vietnamese",
+                    "title": "Vietnamese"
+                },
+                {
+                    "alias": "seafood",
+                    "title": "Seafood"
+                },
+                {
+                    "alias": "noodles",
+                    "title": "Noodles"
+                }
+            ],
+            "rating": 4.0,
+            "coordinates": {
+                "latitude": 37.30973,
+                "longitude": -121.81354
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "3005 Silver Creek Rd",
+                "address2": "Ste 138",
+                "address3": "",
+                "city": "San Jose",
+                "zip_code": "95121",
+                "country": "US",
+                "state": "CA",
+                "display_address": [
+                    "3005 Silver Creek Rd",
+                    "Ste 138",
+                    "San Jose, CA 95121"
+                ]
+            },
+            "phone": "+14082236188",
+            "display_phone": "(408) 223-6188",
+            "distance": 3237.9963271966585
         }
     ],
-    "total": 202,
+    "total": 2300,
     "region": {
         "center": {
-            "longitude": -122.41275787353516,
-            "latitude": 37.77586808576783
+            "longitude": -121.82601928710938,
+            "latitude": 37.28169082028363
         }
     }
 }
