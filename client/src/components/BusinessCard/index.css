@@ -21,6 +21,11 @@
     scrollbar-width: none;
     overflow-y: scroll;
 }
+@media only screen and (max-width: 767px) {
+    #profile {
+        max-height: calc(100vh - 140px);
+    }
+}
 #profile > .visible {
     max-height: 100%;
     position: relative;
