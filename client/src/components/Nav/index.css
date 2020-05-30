@@ -1,0 +1,10 @@
+/* .navigation {
+    display:inline-block
+} */
+main.navigation > div {
+    min-width: 100vw;
+    text-align: center;
+}
+.navigation {
+    background-color:white;
+}

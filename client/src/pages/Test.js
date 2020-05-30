@@ -5,7 +5,9 @@ import RestaurantGroup from "../components/RestaurantGroup";
 function Test() {
     return (
         <main>
-            <RestaurantGroup />
+            <Container className='view'>
+                <RestaurantGroup />
+            </Container>
         </main>
     );
 }

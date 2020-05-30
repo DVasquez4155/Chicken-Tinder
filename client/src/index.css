@@ -2,10 +2,14 @@ html,body {
     margin:0;
     padding:0;
 }
-main {
+#root {
+    min-height: 100vh;
     background-color: rgba(211, 211, 211, 0.25);
     max-width: 100%;
     padding: 0;
+}
+div.page {
+    max-width: 100vw;
 }
 div.view {
     margin: auto;
@@ -13,4 +17,5 @@ div.view {
     padding: 15px;
     position: relative;
     overflow: hidden;
+    height: 100%;
 }

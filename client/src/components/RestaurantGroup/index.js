@@ -6,7 +6,10 @@ function RestaurantGroup(props) {
         <main>
             <ListGroup>
                 <ListGroup.Item>
-                    Test
+                    Business 1
+                </ListGroup.Item>
+                <ListGroup.Item>
+                    Business 2
                 </ListGroup.Item>
             </ListGroup>
         </main>
