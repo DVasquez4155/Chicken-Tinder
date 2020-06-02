@@ -102,7 +102,7 @@ class BusinessCard extends React.Component {
                                 </Col>
                                 <Col>
                                     <span className='interactive-icon float-right'>
-                                        <Button id='info' onClick={() => {$('#profile').toggleClass('details');}}>
+                                        <Button variant="light" id='info' onClick={() => {$('#profile').toggleClass('details');}}>
                                             <FontAwesomeIcon icon={faInfo} transform="shrink-5"/>
                                         </Button>
                                     </span>
@@ -122,7 +122,7 @@ class BusinessCard extends React.Component {
                         </div>
                         <Container className='detail'>
                             <span className='interactive-icon hide'>
-                                <Button className='hide' onClick={() => {$('#profile').toggleClass('details')}}>
+                                <Button variant="light" className='hide' onClick={() => {$('#profile').toggleClass('details')}}>
                                     <FontAwesomeIcon icon={faArrowDown} />
                                 </Button>
                             </span>

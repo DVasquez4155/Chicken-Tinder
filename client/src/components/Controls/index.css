@@ -3,9 +3,8 @@
     position: absolute;
     bottom: 10px;
 } */
-.controls {
-    padding-bottom: 10px;
-}
+/* .controls {
+} */
 .interactive-icon > button > svg {
     position: absolute;
     top: 0;
@@ -17,7 +16,6 @@
 }
 .interactive-icon > button {
     border-width: 0;
-    background-color: #fff;
     box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.21);
     
     width: 45px; 
