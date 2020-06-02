@@ -11,7 +11,6 @@ class Index extends React.Component {
   render() {
     return (
       <main>
-        
         <Container className='view'>
           <BusinessCard {...this.props.businesses[this.props.count]} />
           <Controls {...this.props.functions} />
