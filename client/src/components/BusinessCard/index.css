@@ -16,14 +16,14 @@
 
     height: 667px;
     max-height: calc(100vh - 115px);
-    border-radius: 15px;
-    margin-bottom: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
     scrollbar-width: none;
     overflow-y: scroll;
 }
 @media only screen and (max-width: 767px) {
     #profile {
-        max-height: calc(100vh - 140px);
+        max-height: calc(100vh - 135px);
     }
 }
 #profile > .visible {
@@ -58,7 +58,7 @@
     text-align: center;
 }
 #profile > .detail {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
     position: absolute;
     color: #545454;
