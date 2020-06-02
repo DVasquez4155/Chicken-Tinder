@@ -1,0 +1,19 @@
+img {
+  object-fit: cover;
+  width: 55px;
+  height: 55px;
+  vertical-align: middle;
+}
+
+h5 {
+  text-align: center;
+  color: #424242;
+  font-weight: bolder;
+}
+
+.side {
+  text-align: right;
+  vertical-align: top;
+  font-weight: bolder;
+  color: #424242;
+}
