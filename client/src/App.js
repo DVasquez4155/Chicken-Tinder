@@ -1,14 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Index from "./pages/Index";
+import { Row, Col } from "react-bootstrap";
+
+//Pages
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NoMatch from "./pages/NoMatch";
+//App
+import Index from "./pages/Index";
+import Matches from "./pages/Matches";
+//Navigations
 import Nav from "./components/Nav";
 import MobileNav from "./components/Nav/mobile";
 import NotSignedInNav from "./components/Nav/NotSignedIn";
-import { Row, Col } from "react-bootstrap";
 
 import API from "./utils/API";
 
@@ -53,10 +58,10 @@ class App extends React.Component {
           <div className='main-page p-responsive position-relative container-lg'>
             <div className='d-md-flex flex-items-center gutter-md-spacious'>
               <Col>
-              <div class="container">
-                <h1 class="display-4">What's For Dinner</h1>
-                <p class="lead">Description</p>
-                <hr class="my-4"/>
+              <div className="container">
+                <h1 className="display-4">What's For Dinner</h1>
+                <p className="lead">Description</p>
+                <hr className="my-4"/>
 
                 <a href="https://github.com/DVasquez4155/">
                   <img src="https://avatars0.githubusercontent.com/u/22107830?v=4" width="50"/>
@@ -83,8 +88,8 @@ class App extends React.Component {
                 <br/>
                 <br/>
                 <div className='d-flex justify-content-between align-items-center btn-group'>
-                  <a class="col btn btn-sm btn-outline-secondary" href="https://github.com/DVasquez4155/Group-Project-3">View on GitHub&nbsp;<i class="fa fa-github"></i>&nbsp;</a>
-                  <a class="col btn btn-sm btn-outline-secondary" href="/app">View&nbsp;<i class="fa fa-github"></i>&nbsp;</a>
+                  <a className="col btn btn-sm btn-outline-secondary" href="https://github.com/DVasquez4155/Group-Project-3">View on GitHub&nbsp;<i className="fa fa-github"></i>&nbsp;</a>
+                  <a className="col btn btn-sm btn-outline-secondary" href="/app">View&nbsp;<i className="fa fa-github"></i>&nbsp;</a>
                 </div>
               </div>
               </Col>
@@ -111,13 +116,12 @@ class App extends React.Component {
           <Nav {...this.state} />
         </div>
         <div className='col-lg-9 col-md-8 col-xs-12'>
-          
           <Switch>
             <Route exact path={`${match.url}`}>
               <Index {...functions} {...this.state} />
             </Route>
-            {/* <Route exact={true} path={["/"]} {...functions} {...this.state} component={Index} /> */}
-            {/* <Route path={`${match.url}/matches`} exact={true} component={About} /> */}
+            
+            {/* <Route path={`${match.url}/matches`} exact={true} component={Matches} /> */}
             {/* <Route path={`${match.url}/profile`} exact={true} component={Contact} /> */}
           </Switch>
           
@@ -131,7 +135,7 @@ class App extends React.Component {
           <Route exact path={["/landing"]}>
             <Landing />
           </Route>
-          <Route exact={true} path='/app' component={App} />
+          <Route path='/app' component={App} />
           <Route component={NotSignedIn} />
         </Switch>
       </Router>
