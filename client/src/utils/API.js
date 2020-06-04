@@ -1,9 +1,8 @@
 import axios from "axios";
-import db from "../Example.json"
 
 export default {
   getBusinesses: function() {
-    return db.businesses;
+    return axios.get("/api/businesses/");
   },
   getBusiness: function(id) {
     return axios.get("/api/books/" + id);
