@@ -8,8 +8,8 @@ console.log(DB);
 function RestaurantGroup(props) {
   return (
     <main>
-      <ListGroup className>
-        <ListGroup.Item>
+      <ListGroup variant="flush">
+        <ListGroup.Item border="success" className="side">
           <h5>
             {" "}
             {DB[0].name}
@@ -17,12 +17,14 @@ function RestaurantGroup(props) {
             {DB[0].price}
           </h5>
 
-          <span class="side">
+          <span>
             <Image src={DB[0].image_url} roundedCircle />
-            {DB[0].display_phone}
+
+            <a href={`tel:${DB[0].display_phone}`}>{DB[0].display_phone}</a>
           </span>
         </ListGroup.Item>
-        <ListGroup.Item>
+
+        <ListGroup.Item className="side">
           {" "}
           <h5>
             {" "}
@@ -30,10 +32,10 @@ function RestaurantGroup(props) {
             {"--"}
             {DB[0].price}
           </h5>
-          <span class="side">
+          <span>
             <Image src={DB[0].image_url} roundedCircle />
 
-            {DB[0].display_phone}
+            <a href={`tel:${DB[0].display_phone}`}>{DB[0].display_phone}</a>
           </span>
         </ListGroup.Item>
       </ListGroup>
