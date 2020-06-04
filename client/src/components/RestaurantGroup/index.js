@@ -20,20 +20,27 @@ function RestaurantGroup(props) {
   return (
     <main>
       <ListGroup className>
-      {JSON.stringify(businesses) !='{}' ? (
-        <ListGroup.Item>
-          <h5>
-            {" "}
-            {businesses[0].name}
-            {"--"}
-            {businesses[0].price}
-          </h5>
+      {JSON.stringify(businesses) !=='{}' ? (
+        <div>
+        {businesses.map((business) => (
+            <ListGroup.Item border="success" className="side">
+              <h5>
+                {" "}
+                {business.name}
+                {"  "}
+                {business.price}
+              </h5>
 
-          <span class="side">
-            <Image src={businesses[0].image_url} roundedCircle />
-            {businesses[0].display_phone}
-          </span>
-        </ListGroup.Item>
+              <span>
+                <Image src={business.image_url} roundedCircle />
+
+                <a href={`tel:${business.display_phone}`}>
+                  {business.display_phone}
+                </a>
+              </span>
+            </ListGroup.Item>
+          ))}
+        </div>
         ) : (
           <p></p>
         )}
