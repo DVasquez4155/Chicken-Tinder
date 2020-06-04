@@ -118,7 +118,7 @@ class App extends React.Component {
         <div className='col-lg-9 col-md-8 col-xs-12'>
           <Switch>
             <Route exact path={`${match.url}`}>
-              <Index {...functions} {...this.state} />
+              <Index functions={{...functions}} {...this.state} />
             </Route>
             
             {/* <Route path={`${match.url}/matches`} exact={true} component={Matches} /> */}
