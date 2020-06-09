@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 import API from "../utils/API";
 import BusinessCard from "../components/BusinessCard";
@@ -11,6 +11,9 @@ function Index() {
   useEffect(() => {
     loadBusinesses()
   }, [])
+  function getCount() {
+    return count;
+  }
   function loadBusinesses() {
     API.getBusinesses()
       .then(res => 
@@ -20,30 +23,40 @@ function Index() {
   };
   var functions = {
     incrementCount: () => {
-      let count = this.state.count + 1;
-      if (count >= this.state.businesses.length) {
+      let count = getCount() + 1;
+      if (count >= businesses.length) {
         count = 0;
       }
+      
       setCount(count)
     },
     decreaseCount: () => {
-      let count = this.state.count - 1;
+      let count = getCount() - 1;
       if (count < 0) {
-        count = this.state.businesses.length - 1
+        count = businesses.length - 1
       }
       setCount(count)
     }
   }
   return (
     <main>
-      <Container className='view'>
-        {JSON.stringify(businesses) !='{}' ? (
-          <BusinessCard {...businesses[count]} />
-        ) : (
-          <p></p>
-        )}
-        <Controls {...functions} />
-      </Container>
+      <Row>
+        <Col>
+          <Container className='view'>
+            {JSON.stringify(businesses) !='{}' ? (
+              <BusinessCard {...businesses[count]} />
+            ) : (
+              <p></p>
+            )}
+            <Controls {...functions} business={businesses[count]} />
+          </Container>
+        </Col>
+        <Col sm='3'>
+          <div class='sideView'>
+            test
+          </div>
+        </Col>
+      </Row>
     </main>
   );
 }

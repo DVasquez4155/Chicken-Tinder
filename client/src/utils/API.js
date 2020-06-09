@@ -4,13 +4,32 @@ export default {
   getBusinesses: function() {
     return axios.get("/api/businesses/");
   },
-  getBusiness: function(id) {
-    return axios.get("/api/books/" + id);
+  getFavorites: function() {
+    return axios.get("/api/businesses/favorites");
   },
-  deleteBusiness: function(id) {
-    return axios.delete("/api/books/" + id);
+  getMatches: function() {
+    return axios.get("/api/businesses/matches");
   },
-  saveBusiness: function(bookData) {
-    return axios.post("/api/books", bookData);
+  // getBusiness: function(id) {
+  //   return axios.get("/api/businesses/" + id);
+  // },
+  // deleteBusiness: function(id) {
+  //   return axios.delete("/api/businesses/" + id);
+  // },
+  bookmark: function(businessData) {
+    
+    return axios.post("/api/businesses/bookmark", businessData);
+  },
+  removeBookmark: function(id) {
+    return axios.delete("/api/businesses/bookmark/" + id);
+  },
+  yesBusiness: function(businessData) {
+    return axios.post("/api/businesses/yes", businessData);
+  },
+  maybeBusiness: function(businessData) {
+    return axios.post("/api/businesses/maybe", businessData);
+  },
+  noBusiness: function(businessData) {
+    return axios.post("/api/businesses/no", businessData);
   }
 };
