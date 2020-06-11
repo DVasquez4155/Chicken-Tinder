@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import API from "../../utils/API";
-import { Container, Col, Row, ListGroup, Image } from "react-bootstrap";
+import { ListGroup, Image } from "react-bootstrap";
 import "./index.css";
 // var businesses = API.getBusinesses();
 // console.log(businesses);

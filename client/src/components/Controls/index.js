@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import { Container, Row, Button } from 'react-bootstrap';
 
@@ -12,7 +12,7 @@ require('./index.css')
 const Controls = (props) => {
     const [icon, setIcon] = useState(farBookmark)
     function changeIcon(business) {
-        if (icon == farBookmark) {
+        if (icon === farBookmark) {
             setIcon(faBookmark)
             console.log(business)
             API.bookmark(business);

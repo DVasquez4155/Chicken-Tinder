@@ -1,5 +1,5 @@
 import React from "react";
-import RestaurantGroup from "../RestaurantGroup";
+// import RestaurantGroup from "../RestaurantGroup";
 import { Button } from "react-bootstrap";
 
 require('./index.css')
@@ -16,9 +16,15 @@ function Nav(props) {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul id="links" className="nav navbar-nav ml-auto">
+                            
                             <Button variant="success">Create Session</Button>
-                            <li className="nav-item" role="presentation"><a className="nav-link" href="/login">Login</a></li>
-                            <li className="nav-item" role="presentation"><a className="nav-link" href="/register">Register</a></li>
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link" href="/login">Login</a>
+                            </li>
+                            <li className="nav-item" role="presentation">
+                                <a className="nav-link" href="/register">Register</a>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>

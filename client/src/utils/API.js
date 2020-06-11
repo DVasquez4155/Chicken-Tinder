@@ -1,6 +1,14 @@
 import axios from "axios";
 
 export default {
+  createSession: (event) => {
+    event.preventDefault();
+    const values = event.target.elements;
+    return axios.post("/api/register", {
+      name: values.name.value.trim(),
+      zip: values.zip.value.trim()
+    });
+  },
   getBusinesses: function() {
     return axios.get("/api/businesses/");
   },
