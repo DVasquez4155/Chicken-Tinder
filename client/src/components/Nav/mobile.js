@@ -1,6 +1,6 @@
 import React from "react";
-import RestaurantGroup from "../RestaurantGroup";
-import { Row, Container, Col, Button } from "react-bootstrap";
+// import RestaurantGroup from "../RestaurantGroup";
+import { Row, Container, Button } from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faUser, faBookmark } from '@fortawesome/free-solid-svg-icons'

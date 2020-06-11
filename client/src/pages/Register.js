@@ -1,11 +1,11 @@
 import React from "react";
-import { Container, Col, Row, Form, Button } from "react-bootstrap";
-
+import { Form, Button } from "react-bootstrap";
+import API from "../utils/API"
 function Login() {
   return (
     <main>
-      <Form>
-        <Form.Group controlId="formBasicEmail">
+      <Form onSubmit={API.createSession}>
+        <Form.Group controlId="name">
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" placeholder="Name" />
           <Form.Text className="text-muted">
@@ -13,7 +13,7 @@ function Login() {
           </Form.Text>
         </Form.Group>
 
-        <Form.Group controlId="formBasicPassword">
+        <Form.Group controlId="zip">
           <Form.Label>ZIP Code</Form.Label>
           <Form.Control type="text" placeholder="ZIP Code" />
         </Form.Group>
