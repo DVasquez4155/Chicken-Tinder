@@ -42,7 +42,7 @@ function Index() {
       <Row>
         <Col>
           <Container className="view">
-            {JSON.stringify(businesses) != "{}" ? (
+            {JSON.stringify(businesses) !== "{}" ? (
               <BusinessCard {...businesses[count]} />
             ) : (
               <p></p>

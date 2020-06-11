@@ -9,18 +9,14 @@ import Register from "./pages/Register";
 import NoMatch from "./pages/NoMatch";
 //App
 import Index from "./pages/Index";
-import Matches from "./pages/Matches";
+// import Matches from "./pages/Matches";
 //Navigations
 import Nav from "./components/Nav";
 import MobileNav from "./components/Nav/mobile";
 import NotSignedInNav from "./components/Nav/NotSignedIn";
 
-import API from "./utils/API";
+// import API from "./utils/API";
 class App extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
   render() {
     const NotSignedIn = ({match}) => (
       
@@ -37,25 +33,25 @@ class App extends React.Component {
                 <hr className="my-4"/>
 
                 <a href="https://github.com/DVasquez4155/">
-                  <img src="https://avatars0.githubusercontent.com/u/22107830?v=4" width="50"/>
+                  <img src="https://avatars0.githubusercontent.com/u/22107830?v=4" alt='Daniel Vasquez Talavera Github Image' width="50"/>
                   <span> Daniel Vasquez Talavera</span>
                 </a>
                 <br/>
                 <br/>
                 <a href="https://github.com/krease23">
-                  <img src="https://avatars0.githubusercontent.com/u/58020708?v=4" width="50"/>
+                  <img src="https://avatars0.githubusercontent.com/u/58020708?v=4" alt='Kermit Bonner Github Image' width="50"/>
                   <span> Kermit Bonner</span>
                 </a>
                 <br/>
                 <br/>
                 <a href="https://github.com/ConradRodgers">
-                  <img src="https://avatars0.githubusercontent.com/u/58347782?v=4" width="50"/>
+                  <img src="https://avatars0.githubusercontent.com/u/58347782?v=4" alt='Conrad Github Image' width="50"/>
                   <span> Conrad</span>
                 </a>
                 <br/>
                 <br/>
                 <a href="https://github.com/David-Pendley">
-                  <img src="https://avatars0.githubusercontent.com/u/57915196?v=4" width="50"/>
+                  <img src="https://avatars0.githubusercontent.com/u/57915196?v=4" alt='David Pendley Github Image' width="50"/>
                   <span> David Pendley</span>
                 </a>
                 <br/>
