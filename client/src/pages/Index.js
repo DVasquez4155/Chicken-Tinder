@@ -5,7 +5,7 @@ import API from "../utils/API";
 import BusinessCard from "../components/BusinessCard";
 import Controls from "../components/Controls";
 
-function Index() {
+function Index(props) {
   const [businesses, setBusinesses] = useState({})
   const [count, setCount] = useState(0)
   useEffect(() => {
@@ -15,7 +15,7 @@ function Index() {
     return count;
   }
   function loadBusinesses() {
-    API.getBusinesses()
+    API.getBusinesses(props.match.params.user)
       .then(res => 
         setBusinesses(res.data)
       )

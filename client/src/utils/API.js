@@ -4,13 +4,26 @@ export default {
   createSession: (event) => {
     event.preventDefault();
     const values = event.target.elements;
-    return axios.post("/api/register", {
+    axios.post("/api/register", {
       name: values.name.value.trim(),
       zip: values.zip.value.trim()
-    });
+    })
+    .then(res => 
+      window.location.href = "/app/user/" + res.data
+    );
   },
-  getBusinesses: function() {
-    return axios.get("/api/businesses/");
+  joinSession: (event) => {
+    event.preventDefault();
+    const values = event.target.elements;
+    axios.post("/api/join", {
+      id: values.id.value.trim(),
+    })
+    .then(res => 
+      window.location.href = "/group/" + res.data.uuid
+    );
+  },
+  getBusinesses: function(id) {
+    return axios.get("/api/businesses/", {params: {userid:id}});
   },
   getFavorites: function() {
     return axios.get("/api/businesses/favorites");

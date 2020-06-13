@@ -4,7 +4,9 @@ const controller = require('../../../controllers/index')
 const db = require("./Example.json")
 
 // API Routes
-router.get("/", (req,res) => {
+router.route("/")
+.get((req,res) => {
+    console.log(req.query)
     res.send(db.businesses)
 })
 
