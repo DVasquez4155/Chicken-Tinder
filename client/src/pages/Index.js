@@ -5,9 +5,9 @@ import API from "../utils/API";
 import BusinessCard from "../components/BusinessCard";
 import Controls from "../components/Controls";
 
-function Index() {
-  const [businesses, setBusinesses] = useState({});
-  const [count, setCount] = useState(0);
+function Index(props) {
+  const [businesses, setBusinesses] = useState({})
+  const [count, setCount] = useState(0)
   useEffect(() => {
     loadBusinesses();
   }, []);
@@ -15,11 +15,12 @@ function Index() {
     return count;
   }
   function loadBusinesses() {
-    API.getBusinesses()
-      .then((res) => setBusinesses(res.data))
-      .catch((err) => console.log(err));
-  }
-
+    API.getBusinesses(props.match.params.user)
+      .then(res => 
+        setBusinesses(res.data)
+      )
+      .catch(err => console.log(err));
+  };
   var functions = {
     incrementCount: () => {
       let count = getCount() + 1;

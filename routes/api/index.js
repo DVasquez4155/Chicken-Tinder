@@ -6,4 +6,5 @@ const controller = require('../../controllers/index')
 // API Routes
 router.use("/businesses", businesses);
 router.post('/register', controller.createSession)
+router.post('/join', controller.joinSession)
 module.exports = router

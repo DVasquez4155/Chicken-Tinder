@@ -1,4 +1,4 @@
-const uuidv4 = require('uuid');
+const { v4: uuidv4 } = require('uuid');
 
 const db = require("../models");
 
@@ -21,19 +21,24 @@ module.exports = {
     createSession: (req,res) => {
         const sessionId = uuidv4();
         const userId = uuidv4();
-        console.log(req.body)
         db.User
         .create({
             users: [{
-                name: "",
+                name: req.body.name.trim(),
                 id: userId
             }],
             uuid: sessionId,
-            zipcode: ""
+            zipcode: parseInt(req.body.zip)
         })
-        .then(
-            res.redirect('/app/' + userId)
-        )
-        .catch(err => res.status(422).json(err));
+        .then(() => res.json(userId))
+        .catch(err => res.status(422).json(err))
+    },
+    joinSession: (req,res) => {
+        db.User
+        .findOne({
+            uuid: req.body.id,
+        })
+        .then(result => res.json(result))
+        .catch(err => res.status(422).json(err))
     }
 }
