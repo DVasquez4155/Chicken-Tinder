@@ -24,21 +24,17 @@ function Nav(props) {
             <ul id="links" className="nav navbar-nav ml-auto">
               {/* <Button variant="success">Create Session</Button> */}
               <li className="mr-3 nav-item" role="presentation">
-                <Button
-                  variant="outline-warning"
-                  className="nav-link"
-                  href="/login"
-                >
-                  Login
+                <Button variant="success" className="nav-link" href="/register">
+                  Register
                 </Button>
               </li>
               <li className="nav-item" role="presentation">
                 <Button
-                  variant="outline-warning"
+                  variant="outline-link"
                   className="nav-link"
-                  href="/register"
+                  href="/login"
                 >
-                  Register
+                  Login
                 </Button>
               </li>
             </ul>
