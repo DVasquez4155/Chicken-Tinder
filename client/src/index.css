@@ -33,3 +33,12 @@ div.view {
   margin-right: -20px;
   margin-bottom: -20px;
 }
+
+.loginAs > .list-group > .title {
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 0;
+}
+.loginAs > .list-group > .items {
+  border-width: 1px;
+  background-color: rgba(255, 255, 255, 0.26);
+}

@@ -22,6 +22,11 @@ export default {
       window.location.href = "/group/" + res.data.uuid
     );
   },
+  getSession: (id) => {
+    return axios.post("/api/join", {
+      id: id,
+    })
+  },
   getBusinesses: function(id) {
     return axios.get("/api/businesses/", {params: {userid:id}});
   },
