@@ -6,21 +6,28 @@ import BusinessCard from "../components/BusinessCard";
 import Controls from "../components/Controls";
 
 function Index(props) {
-  const [businesses, setBusinesses] = useState({})
-  const [count, setCount] = useState(0)
+  const [businesses, setBusinesses] = useState({});
+  const [count, setCount] = useState(0);
+  const [user, setUser] = useState({});
   useEffect(() => {
     loadBusinesses();
+    loadUser();
   }, []);
   function getCount() {
     return count;
   }
+
+  function loadUser() {
+    API.getUser(props.match.params.user)
+      .then((res) => console.log(res.data))
+      .catch((err) => console.log(err));
+  }
+
   function loadBusinesses() {
     API.getBusinesses(props.match.params.user)
-      .then(res => 
-        setBusinesses(res.data)
-      )
-      .catch(err => console.log(err));
-  };
+      .then((res) => setBusinesses(res.data))
+      .catch((err) => console.log(err));
+  }
   var functions = {
     incrementCount: () => {
       let count = getCount() + 1;
