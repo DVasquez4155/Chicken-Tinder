@@ -23,7 +23,7 @@ function Nav(props) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul id="links" className="nav navbar-nav ml-auto">
               {/* <Button variant="success">Create Session</Button> */}
-              <li className="nav-item" role="presentation">
+              <li className="mr-3 nav-item" role="presentation">
                 <Button
                   variant="outline-warning"
                   className="nav-link"
