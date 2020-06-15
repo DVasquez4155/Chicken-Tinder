@@ -3,13 +3,13 @@ import RestaurantGroup from "../RestaurantGroup";
 
 require('./index.css')
 
-function Nav() {
+function Nav(props) {
   return (
     <main>
           <div className="dynamicDiv" id="dd.0.4.0">
             <div className="sidebar-wrapper">
               <nav>
-                <RestaurantGroup />
+                <RestaurantGroup user={props.user}/>
               </nav>
             </div>
           </div>

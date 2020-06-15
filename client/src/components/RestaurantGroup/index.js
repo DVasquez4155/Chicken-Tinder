@@ -1,31 +1,21 @@
-import React, { useState, useEffect } from "react";
-import API from "../../utils/API";
+import React from "react";
 
 import { ListGroup } from "react-bootstrap";
 import "./index.css";
-// var businesses = API.getBusinesses();
-// console.log(businesses);
 
 function RestaurantGroup(props) {
-  const [businesses, setBusinesses] = useState({});
-  useEffect(() => {
-    loabusinessesusinesses();
-  }, []);
-  function loabusinessesusinesses() {
-    API.getBusinesses()
-      .then((res) => setBusinesses(res.data))
-      .catch((err) => console.log(err));
-  }
   return (
     <main className="scroll scrollbar-near-moon">
       <hr />
       <h1>Top Matches</h1>
       <hr />
       <ListGroup>
-        {JSON.stringify(businesses) !== "{}" ? (
+        {(props.user.bookmarks === undefined || props.user.bookmarks.length === 0) ? (
+          <p></p>
+        ) : (
           <div>
-            {businesses.map((business) => (
-              <ListGroup.Item border="success" className="side">
+            {props.user.bookmarks.map((business) => (
+              <ListGroup.Item key={business.id} border="success" className="side">
                 <p>
                   {business.name} | {business.rating} Stars
                 </p>
@@ -44,8 +34,6 @@ function RestaurantGroup(props) {
               </ListGroup.Item>
             ))}
           </div>
-        ) : (
-          <p></p>
         )}
       </ListGroup>
     </main>

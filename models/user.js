@@ -2,41 +2,27 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-    date: {
-        type: Date,
-        default: Date.now
+    name: {
+        type: String,
+        required: true
     },
-    users: [{
-        name: {
-            type: String,
-            required: true
-        },
-        id: {
-            type: String,
-            required: true
-        },
-        //ID
-        yes: [{
-            type: String,
-            required: true
-        }],
-        maybe: [{
-            type: String,
-            required: true
-        }],
-        favorites: [{
-            type: String,
-            required: true
-        }]
+    id: {
+        type: String,
+        required: true
+    },
+    //ID
+    yes: [{
+        type: String,
+        required: true
     }],
-    uuid: {
-        type: String, 
+    maybe: [{
+        type: String,
         required: true
-    },
-    zipcode: {
-        type: Number,
+    }],
+    bookmarks: [{
+        type: String,
         required: true
-    }
+    }]
 
 });
 

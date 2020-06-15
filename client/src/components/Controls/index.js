@@ -20,14 +20,13 @@ const Controls = (props) => {
   function changeIcon(business) {
     if (icon === farBookmark) {
       setIcon(faBookmark);
-      console.log(business);
-      API.bookmark(business);
+      console.log(props.user.id, business.id)
+      API.bookmark(props.user.id, business.id);
     } else {
       setIcon(farBookmark);
-      API.removeBookmark(business.id);
+      API.removeBookmark(props.user.id, business.id);
     }
   }
-  console.log(props);
   return (
     <Container className="controls" fluid>
       <Row className="interactive-icon">

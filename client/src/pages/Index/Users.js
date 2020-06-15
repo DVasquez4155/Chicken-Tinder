@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import API from "../utils/API"
+import API from "../../utils/API"
 import { ListGroup, Button } from "react-bootstrap";
 
 function Login(props) {
     const [group, setGroup] = useState({})
-    useEffect(() => {
-        loadGroup();
-    }, []);
+    
     function loadGroup() {
         API.getSession(props.match.params.group)
         .then(res => 
@@ -14,8 +12,7 @@ function Login(props) {
         )
         .catch(err => console.log(err));
     };
-    console.log(group)
-    console.log(group.users)
+    useEffect(loadGroup, [])
     function login(user) {
         window.location.href = "/app/user/" + user.id
     }

@@ -10,8 +10,9 @@ router.route("/").get((req, res) => {
 
 router.route("/matches").get(controller.findAll);
 
-router.route("/bookmark").post(controller.bookmark);
-// .delete({})
+router.route("/bookmark")
+.post(controller.bookmark)
+.delete(controller.removeBookmark);
 
 router.get("/yes", (req, res) => {
   res.send(db.businesses);

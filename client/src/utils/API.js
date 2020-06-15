@@ -31,8 +31,11 @@ export default {
   getUser: function (id) {
     return axios.get("/api/user", { params: { id: id } });
   },
-  getFavorites: function () {
-    return axios.get("/api/businesses/favorites");
+  getGroup: function (id) {
+    return axios.get("/api/group", { params: { id: id } });
+  },
+  getBookmarks: function () {
+    return axios.get("/api/businesses/bookmarks");
   },
   getMatches: function () {
     return axios.get("/api/businesses/matches");
@@ -43,11 +46,19 @@ export default {
   // deleteBusiness: function(id) {
   //   return axios.delete("/api/businesses/" + id);
   // },
-  bookmark: function (businessData) {
-    return axios.post("/api/businesses/bookmark", businessData);
+  bookmark: function (userId, businessId) {
+    const data = {
+      id: userId,
+      businessId: businessId
+    }
+    return axios.post("/api/businesses/bookmark", data);
   },
-  removeBookmark: function (id) {
-    return axios.delete("/api/businesses/bookmark/" + id);
+  removeBookmark: function (userId, businessId) {
+    const data = {
+      id: userId,
+      businessId: businessId
+    }
+    return axios.delete("/api/businesses/bookmark/", { params: data});
   },
   yesBusiness: function (businessData) {
     return axios.post("/api/businesses/yes", businessData);
