@@ -6,15 +6,14 @@ function Login() {
     <main>
       <Form onSubmit={API.joinSession}>
         <Form.Group controlId="id">
-          <Form.Label>ID</Form.Label>
-          <Form.Control type="text" placeholder="Enter ID" />
+          <Form.Label>Enter Group ID</Form.Label>
+          <Form.Control type="text" />
           <Form.Text className="text-muted">
-            Any info entered will delete upon closing the app.
           </Form.Text>
         </Form.Group>
         
         <Button variant="primary" type="submit">
-          Push ME!
+          Join Session
         </Button>
       </Form>
     </main>

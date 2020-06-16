@@ -20,13 +20,18 @@ const Controls = (props) => {
   function changeIcon(business) {
     if (icon === farBookmark) {
       setIcon(faBookmark);
-      console.log(props.user.id, business.id)
       API.bookmark(props.user.id, business.id);
     } else {
       setIcon(farBookmark);
       API.removeBookmark(props.user.id, business.id);
     }
   }
+  // console.log(props.business)
+  // const bookmarked = ((props.user.bookmarks.find(({ id }) => id === props.business.id)) === undefined)
+  // console.log(bookmarked)
+  // if (bookmarked) {
+  //   setIcon(farBookmark);
+  // }
   return (
     <Container className="controls" fluid>
       <Row className="interactive-icon">
@@ -48,16 +53,16 @@ const Controls = (props) => {
         >
           <FontAwesomeIcon size="2x" icon={faTimes} />
         </Button>
-        <Button
+        <p></p>
+        {/* <Button
           onClick={() => {
             props.incrementCount();
             API.maybeBusiness();
           }}
           variant="outline-secondary"
         >
-          {/* <Button onClick={()=>{props.incrementCount()}} className='question'> */}
           <FontAwesomeIcon icon={faQuestion} />
-        </Button>
+        </Button> */}
         <Button
           onClick={() => {
             props.incrementCount();

@@ -9,4 +9,9 @@ router.get("/user", controller.getuser);
 router.get("/group", controller.getGroup);
 router.post("/register", controller.createSession);
 router.post("/join", controller.joinSession);
+
+
+router.post("/join/group", controller.joinGroupSession);
+
+
 module.exports = router;

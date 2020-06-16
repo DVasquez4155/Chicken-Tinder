@@ -9,8 +9,22 @@ function getBusinesses(cb) {
   .then((dbModel) => cb(dbModel))
   .catch(() => cb({}));
 }
+function getUsers(cb) {
+  
+  db.User.find({})
+  .sort({ date: -1 })
+  .then((dbModel) => cb(dbModel))
+  .catch(() => cb({}));
+}
 
 module.exports = {
+  yes: (req, res) => {
+    res.send(req.body)
+  },
+  no: (req, res) => {
+  },
+  undo: (req, res) => {
+  },
   createSession: (req, res) => {
     const sessionId = uuidv4();
     const userId = uuidv4();
@@ -55,8 +69,33 @@ module.exports = {
     db.Group.findOne({
       uuid: req.body.id,
     })
-    .then((result) => res.json(result))
+    .then((result) => {
+      getUsers(users => {
+        result.users.forEach((user, i) => {
+          result.users[i] = (users.find( ({ id }) => id === user ))
+        })
+        res.json(result)
+      })
+    })
     .catch((err) => res.status(422).json(err));
+  },
+  joinGroupSession: (req,res) => {
+    const userId = uuidv4();
+    db.User.create({
+      name: req.body.name.trim(),
+      id: userId,
+    })
+    .catch((err) => res.status(422).json(err));
+    console.log(req.body)
+    db.Group.findOneAndUpdate({
+      uuid: req.body.id,
+    },
+    {$push: { users: userId }}
+    )
+    .then(result => {
+      res.json(userId)
+    })
+    .catch(err => error);
   },
 
   bookmark: (req, res) => {
@@ -116,7 +155,6 @@ module.exports = {
         res.json({})
         return;
       }
-      
       getBusinesses(businesses => {
         result.businesses.forEach((business, i) => {
           result.businesses[i] = (businesses.find( ({ id }) => id === business ))

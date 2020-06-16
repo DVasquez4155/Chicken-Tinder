@@ -20,6 +20,16 @@ export default {
       })
       .then((res) => (window.location.href = "/group/" + res.data.uuid));
   },
+  joinGroupSession: (event, groupID) => {
+    event.preventDefault();
+    const values = event.target.elements;
+    axios
+      .post("/api/join/group", {
+        id: groupID,
+        name: values.name.value.trim(),
+      })
+      .then((res) => (window.location.href = "/app/user/" + res.data));
+  },
   getSession: (id) => {
     return axios.post("/api/join", {
       id: id,

@@ -19,7 +19,6 @@ function Index(props) {
   function getCount() {
     return count;
   }
-
   var functions = {
     incrementCount: () => {
       let count = getCount() + 1;

@@ -22,19 +22,18 @@ function Nav(props) {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul id="links" className="nav navbar-nav ml-auto">
-              {/* <Button variant="success">Create Session</Button> */}
-              <li className="mr-3 nav-item" role="presentation">
-                <Button variant="success" className="nav-link" href="/register">
-                  Register
-                </Button>
-              </li>
               <li className="nav-item" role="presentation">
                 <Button
-                  variant="outline-link"
+                  variant="outline-*"
                   className="nav-link"
                   href="/login"
                 >
-                  Login
+                  Join Session
+                </Button>
+              </li>
+              <li className="mr-3 nav-item" role="presentation">
+                <Button variant="success" className="nav-link" href="/register">
+                  Create Session
                 </Button>
               </li>
             </ul>

@@ -13,14 +13,7 @@ router.route("/bookmark")
 .post(controller.bookmark)
 .delete(controller.removeBookmark);
 
-router.get("/yes", (req, res) => {
-  res.send(db.businesses);
-});
-router.get("/maybe", (req, res) => {
-  res.send(db.businesses);
-});
-router.get("/no", (req, res) => {
-  res.send(db.businesses);
-});
-
+router.post("yes", controller.yes);
+router.post("no", controller.no);
+router.post("undo", controller.undo);
 module.exports = router;

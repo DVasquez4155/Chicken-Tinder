@@ -9,7 +9,7 @@ function Nav(props) {
           <div className="dynamicDiv" id="dd.0.4.0">
             <div className="sidebar-wrapper">
               <nav>
-                <RestaurantGroup user={props.user}/>
+                <RestaurantGroup user={props.user} group={props.group}/>
               </nav>
             </div>
           </div>

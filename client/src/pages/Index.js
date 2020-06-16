@@ -6,6 +6,7 @@ import { Col } from "react-bootstrap";
 import Landing from "./Index/Landing";
 import Login from "./Index/Login";
 import Users from "./Index/Users";
+import RegisterNewUser from "./Index/RegisterNewUser";
 import Register from "./Index/Register";
 import NoMatch from "./Index/NoMatch";
 
@@ -60,6 +61,7 @@ const Index = ({match}) => (
                             <Route exact={true} path={["/"]} component={Landing} />
                             <Route exact={true} path={["/login"]} component={Login} />
                             <Route exact={true} path={["/group/:group?"]} component={Users} />
+                            <Route exact={true} path={["/group/:group?/register"]} component={RegisterNewUser} />
                             <Route exact={true} path={["/register"]} component={Register} />
                             <Route component={NoMatch} />
                         </Switch>

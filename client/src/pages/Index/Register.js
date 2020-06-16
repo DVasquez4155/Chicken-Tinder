@@ -7,19 +7,19 @@ function Login() {
       <Form onSubmit={API.createSession}>
         <Form.Group controlId="name">
           <Form.Label>Name</Form.Label>
-          <Form.Control type="text" placeholder="Name" />
+          <Form.Control type="text" />
           <Form.Text className="text-muted">
-            Any info entered will delete upon closing the app.
+            Data will only be stored for a week
           </Form.Text>
         </Form.Group>
 
         <Form.Group controlId="zip">
           <Form.Label>ZIP Code</Form.Label>
-          <Form.Control type="text" placeholder="ZIP Code" />
+          <Form.Control type="text" />
         </Form.Group>
 
         <Button variant="primary" type="submit">
-          Do it Again! I dare you.
+          Create Session
         </Button>
       </Form>
     </main>

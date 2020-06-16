@@ -16,6 +16,7 @@ function Login(props) {
     function login(user) {
         window.location.href = "/app/user/" + user.id
     }
+    console.log(group)
     return (
         <main className='loginAs'>
             <ListGroup>
@@ -31,7 +32,7 @@ function Login(props) {
                 )}
             </ListGroup>
             <br />
-            <Button variant='success'>Register</Button>
+            <Button onClick={() => {window.location.href=`/group/${group.uuid}/register`}} variant='success'>Register</Button>
         </main>
     );
 }
