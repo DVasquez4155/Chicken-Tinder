@@ -39,7 +39,7 @@ const Controls = (props) => {
           onClick={() => {
             props.decreaseCount();
             //Needs Fix
-            API.undoBusiness(props.user.id, props.business.name);
+            API.undoBusiness(props.user.id, props.business.id);
           }}
           variant="outline-warning"
         >

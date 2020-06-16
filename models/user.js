@@ -8,20 +8,24 @@ const userSchema = new Schema({
     },
     id: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     //ID
     yes: [{
         type: String,
-        required: true
+        required: true,
+        unique: true
     }],
     no: [{
         type: String,
-        required: true
+        required: true,
+        unique: true
     }],
     bookmarks: [{
         type: String,
-        required: true
+        required: true,
+        unique: true
     }]
 
 });

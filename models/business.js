@@ -8,7 +8,8 @@ const businessSchema = new Schema({
     },
     id: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     name: {
         type: String,

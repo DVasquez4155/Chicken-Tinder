@@ -10,11 +10,24 @@ function getBusinesses(cb) {
   .catch(() => cb({}));
 }
 function getUsers(cb) {
-
   db.User.find({})
   .sort({ date: -1 })
   .then((dbModel) => cb(dbModel))
   .catch(() => cb({}));
+}
+function match(groupId, businessId) {
+  db.Group.findOne({
+    "uuid": groupId,
+    matches: businessId
+  })
+  .then(result => {
+    console.log(result)
+  })
+  db.Group.findOneAndUpdate(
+    {"uuid": groupId},
+    {$push: {matches: businessId} }
+  )
+  // .catch((err) => error(err));
 }
 
 module.exports = {
@@ -27,6 +40,25 @@ module.exports = {
       res.send(result)
     })
     .catch((err) => res.status(422).json(err));
+    
+    db.Group.findOne({
+      "users": req.body.id,
+    })
+    .then(result => {
+      getUsers(users => {
+        result.users.forEach((user, i) => {
+          result.users[i] = (users.find( ({ id }) => id === user ))
+        })
+        result.users.forEach(user => {
+          if (user.yes.includes( req.body.businessId )) {
+            if (!result.matches.includes(req.body.businessId)) {
+              match(result.uuid, req.body.businessId)
+            }
+          }
+        })
+      })
+    })
+    .catch(err => err);
   },
   no: (req, res) => {
     db.User.findOneAndUpdate(
@@ -39,7 +71,6 @@ module.exports = {
     .catch((err) => res.status(422).json(err));
   },
   undo: (req, res) => {
-    console.log(req.body)
     res.send(req.body)
   },
   createSession: (req, res) => {

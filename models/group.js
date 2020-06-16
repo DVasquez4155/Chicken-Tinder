@@ -8,23 +8,27 @@ const groupSchema = new Schema({
     },
     users: [{
         type: String,
-        required: true
+        required: true,
+        unique: true
     }],
     uuid: {
         type: String, 
-        required: true
+        required: true,
+        unique: true
     },
     zipcode: {
         type: Number,
         required: true
     },
-    matches: {
+    matches: [{
         type: String, 
-        required: false
-    },
+        required: false,
+        unique: true
+    }],
     businesses: [{
         type: String,
-        required: true
+        required: true,
+        unique: true
     }],
 });
 
