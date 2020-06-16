@@ -10,7 +10,7 @@ function Nav(props) {
       <nav className="navbar navbar-dark navbar-expand-lg bg-dark ">
         <div className="container">
           <a className="navbar-brand logo" href="/">
-            What's For Dinner
+            Chicken Tinder
           </a>
           <button
             data-toggle="collapse"
@@ -23,11 +23,7 @@ function Nav(props) {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul id="links" className="nav navbar-nav ml-auto">
               <li className="nav-item" role="presentation">
-                <Button
-                  variant="outline-*"
-                  className="nav-link"
-                  href="/login"
-                >
+                <Button variant="outline-*" className="nav-link" href="/login">
                   Join Session
                 </Button>
               </li>

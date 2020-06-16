@@ -23,13 +23,8 @@ const Index = ({ match }) => (
           <Col>
             <div className="container">
               <h1 class="h000-mktg text-white lh-condensed-ultra mb-3">
-                Chicken Tinder
+                Let us help determine your PLATE!!
               </h1>
-
-              <p class="lead-mktg mb-4">
-                A quick and easy to use method of choosing a restaurant you BOTH
-                will love.
-              </p>
 
               {/* <a href="https://github.com/DVasquez4155/">
                 <img
