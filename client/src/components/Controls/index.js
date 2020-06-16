@@ -5,7 +5,7 @@ import { Container, Row, Button } from "react-bootstrap";
 import API from "../../utils/API";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faQuestion,
+  // faQuestion,
   faCheck,
   faTimes,
   faUndo,
@@ -38,6 +38,8 @@ const Controls = (props) => {
         <Button
           onClick={() => {
             props.decreaseCount();
+            //Needs Fix
+            API.undoBusiness(props.user.id, props.business.name);
           }}
           variant="outline-warning"
         >
@@ -46,7 +48,7 @@ const Controls = (props) => {
         <Button
           onClick={() => {
             props.incrementCount();
-            API.noBusiness();
+            API.noBusiness(props.user.id, props.business.id);
           }}
           className="times large"
           variant="outline-danger"
@@ -66,7 +68,7 @@ const Controls = (props) => {
         <Button
           onClick={() => {
             props.incrementCount();
-            API.yesBusiness();
+            API.yesBusiness(props.user.id, props.business.id);
           }}
           className="check large"
           variant="outline-success"

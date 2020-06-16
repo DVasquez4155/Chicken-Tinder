@@ -13,7 +13,7 @@ router.route("/bookmark")
 .post(controller.bookmark)
 .delete(controller.removeBookmark);
 
-router.post("yes", controller.yes);
-router.post("no", controller.no);
-router.post("undo", controller.undo);
+router.post("/yes", controller.yes);
+router.post("/no", controller.no);
+router.post("/undo", controller.undo);
 module.exports = router;

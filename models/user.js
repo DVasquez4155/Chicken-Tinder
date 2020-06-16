@@ -15,7 +15,7 @@ const userSchema = new Schema({
         type: String,
         required: true
     }],
-    maybe: [{
+    no: [{
         type: String,
         required: true
     }],

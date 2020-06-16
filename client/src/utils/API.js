@@ -70,13 +70,25 @@ export default {
     }
     return axios.delete("/api/businesses/bookmark/", { params: data});
   },
-  yesBusiness: function (businessData) {
-    return axios.post("/api/businesses/yes", businessData);
+  yesBusiness: function (userId, businessId) {
+    const data = {
+      id: userId,
+      businessId: businessId
+    }
+    return axios.post("/api/businesses/yes", data);
   },
-  maybeBusiness: function (businessData) {
-    return axios.post("/api/businesses/maybe", businessData);
+  undoBusiness: function (userId, businessId) {
+    const data = {
+      id: userId,
+      businessId: businessId
+    }
+    return axios.post("/api/businesses/undo", data);
   },
-  noBusiness: function (businessData) {
-    return axios.post("/api/businesses/no", businessData);
+  noBusiness: function (userId, businessId) {
+    const data = {
+      id: userId,
+      businessId: businessId
+    }
+    return axios.post("/api/businesses/no", data);
   },
 };

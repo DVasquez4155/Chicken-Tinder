@@ -10,7 +10,7 @@ function getBusinesses(cb) {
   .catch(() => cb({}));
 }
 function getUsers(cb) {
-  
+
   db.User.find({})
   .sort({ date: -1 })
   .then((dbModel) => cb(dbModel))
@@ -19,11 +19,28 @@ function getUsers(cb) {
 
 module.exports = {
   yes: (req, res) => {
-    res.send(req.body)
+    db.User.findOneAndUpdate(
+      {"id": req.body.id,},
+      {$push: { yes: req.body.businessId }}
+    )
+    .then(result => {
+      res.send(result)
+    })
+    .catch((err) => res.status(422).json(err));
   },
   no: (req, res) => {
+    db.User.findOneAndUpdate(
+      {"id": req.body.id,},
+      {$push: { no: req.body.businessId }}
+    )
+    .then(result => {
+      res.send(result)
+    })
+    .catch((err) => res.status(422).json(err));
   },
   undo: (req, res) => {
+    console.log(req.body)
+    res.send(req.body)
   },
   createSession: (req, res) => {
     const sessionId = uuidv4();
@@ -161,7 +178,6 @@ module.exports = {
         })
         res.json(result)
       })
-      // res.json(result)
     })
     .catch(err => error);
   }

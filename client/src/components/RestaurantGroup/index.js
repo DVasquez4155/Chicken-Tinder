@@ -7,7 +7,9 @@ function RestaurantGroup(props) {
   return (
     <main className="scroll scrollbar-near-moon">
       <hr />
-      <h1>Top Matches</h1><a href={`/group/${props.group.uuid}`}>Share</a>
+      <h1>Top Matches</h1>
+      <a href={`/group/${props.group.uuid}`}>Share</a>
+      <p>{`${props.user.name}`}</p>
       <hr />
       <ListGroup>
         {(props.user.bookmarks === undefined || props.user.bookmarks.length === 0) ? (
