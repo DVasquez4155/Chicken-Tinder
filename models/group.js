@@ -21,7 +21,11 @@ const groupSchema = new Schema({
     matches: {
         type: String, 
         required: false
-    }
+    },
+    businesses: [{
+        type: String,
+        required: true
+    }],
 });
 
 const Group = mongoose.model("Group", groupSchema);

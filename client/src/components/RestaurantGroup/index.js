@@ -22,7 +22,7 @@ function RestaurantGroup(props) {
                 <div className="info">
                   <a
                     className="address"
-                    href={`http://maps.google.com/maps?q=${business.location.display_address[0]} ${business.location.display_address[1]}`}
+                    href={`http://maps.google.com/maps?q=${business.location}`}
                   >
                     {business.location.display_address}
                   </a>

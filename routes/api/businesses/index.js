@@ -4,11 +4,10 @@ const controller = require("../../../controllers/index");
 const db = require("./Example.json");
 
 // API Routes
-router.route("/").get((req, res) => {
-  res.send(db.businesses);
-});
+// router.route("/").get((req, res) => {
+//   res.send(db.businesses);
+// });
 
-router.route("/matches").get(controller.findAll);
 
 router.route("/bookmark")
 .post(controller.bookmark)

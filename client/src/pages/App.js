@@ -29,7 +29,6 @@ function App ({ match }) {
         .catch((err) => console.log(err));
     }
     useEffect(loadGroup, [])
-
     return(
         <div className='container page'>
             <Row>
@@ -41,7 +40,7 @@ function App ({ match }) {
                 </div>
                 <div className='col-lg-9 col-md-8 col-xs-12'>
                     <Switch>
-                        <Route path={match.path} render={() => <Index match={match} user={user} group={group} />}/>
+                        <Route path={match.path} render={() => <Index functions={ {loadGroup, loadUser} } match={match} user={user} group={group} />}/>
                     </Switch>
                 </div>
             </Row>

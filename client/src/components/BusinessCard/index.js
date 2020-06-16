@@ -43,8 +43,8 @@ class BusinessCard extends React.Component {
             },
             {
                 icon: faDirections,
-                value: props.location.address1,
-                label: (<a href={`http://maps.google.com/maps?q=${props.location.display_address[0]} ${props.location.display_address[1]}`}>Directions</a>)
+                value: props.location.address,
+                label: (<a href={`http://maps.google.com/maps?q=${props.location.display_address}`}>Directions</a>)
             },
             {
                 icon: faLink,
@@ -114,7 +114,7 @@ class BusinessCard extends React.Component {
                                     <span>
                                         {this.printDollar(this.props.price.length)}
                                         <span> • </span>
-                                        {this.props.categories.map(e => e.title).join(", ")}
+                                        {this.props.categories.join(", ")}
                                     </span>
                                 </Col>
                             </Row>

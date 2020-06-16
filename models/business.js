@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const bookSchema = new Schema({
+const businessSchema = new Schema({
     date: {
         type: Date,
         default: Date.now
@@ -10,7 +10,11 @@ const bookSchema = new Schema({
         type: String,
         required: true
     },
-    naimage_urlme: {
+    name: {
+        type: String,
+        required: true
+    },
+    image_url: {
         type: String,
         required: true
     },
@@ -53,6 +57,6 @@ const bookSchema = new Schema({
     }],
 });
 
-const Book = mongoose.model("Book", bookSchema);
+const Business = mongoose.model("Business", businessSchema);
 
-module.exports = Book;
+module.exports = Business;
