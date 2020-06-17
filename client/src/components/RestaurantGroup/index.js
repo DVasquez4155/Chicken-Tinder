@@ -34,7 +34,7 @@ function RestaurantGroup(props) {
                     className="address"
                     href={`http://maps.google.com/maps?q=${business.location}`}
                   >
-                    {business.location.display_address}
+                    {business.location}
                   </a>
                   <br />
                   <a href={`tel:${business.display_phone}`}>
@@ -68,7 +68,7 @@ function RestaurantGroup(props) {
                     className="address"
                     href={`http://maps.google.com/maps?q=${business.location}`}
                   >
-                    {business.location.display_address}
+                    {business.location}
                   </a>
                   <br />
                   <a href={`tel:${business.display_phone}`}>
