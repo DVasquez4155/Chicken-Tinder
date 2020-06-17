@@ -39,7 +39,7 @@ p {
 hr {
   border: 0;
   height: 0; /* Firefox... */
-  box-shadow: 0 0 10px 1px black;
+  box-shadow: 0 0 10px 1px gray;
   background-color: gray;
 }
 hr {

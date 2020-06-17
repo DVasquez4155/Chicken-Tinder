@@ -10,6 +10,14 @@ div.landing-page {
   min-width: 100%;
 }
 
+.container-title {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .h000-mktg {
   font-size: 2em !important;
   text-align: center;

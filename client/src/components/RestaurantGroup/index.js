@@ -15,12 +15,12 @@ function RestaurantGroup(props) {
       <hr />
       <h1 className="list-title">Your Matches</h1>
       <ListGroup>
-        {props.user.bookmarks === undefined ||
-        props.user.bookmarks.length === 0 ? (
+        {props.group.matches === undefined ||
+        props.group.matches.length === 0 ? (
           <p></p>
         ) : (
           <div>
-            {props.user.bookmarks.map((business) => (
+            {props.group.matches.map((business) => (
               <ListGroup.Item
                 key={business.id}
                 border="success"

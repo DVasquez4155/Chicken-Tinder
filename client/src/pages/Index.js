@@ -21,12 +21,11 @@ const Index = ({ match }) => (
       <div className="main-landing-page p-responsive position-relative container-lg">
         <div className="d-md-flex flex-items-center gutter-md-spacious">
           <Col>
-            <div className="container">
-              <h1 class="h000-mktg text-white lh-condensed-ultra mb-3">
-                Let us help determine your PLATE!!
-              </h1>
+            <h1 class="h000-mktg text-white lh-condensed-ultra mb-3">
+              Let us help determine your PLATE!!
+            </h1>
 
-              {/* <a href="https://github.com/DVasquez4155/">
+            {/* <a href="https://github.com/DVasquez4155/">
                 <img
                   src="https://avatars0.githubusercontent.com/u/22107830?v=4"
                   alt="Daniel Vasquez Talavera"
@@ -67,7 +66,6 @@ const Index = ({ match }) => (
                 <a className="col btn btn-sm btn-outline-secondary" href="/app">
                   View&nbsp;<i className="fa fa-github"></i>&nbsp;
                 </a> */}
-            </div>
           </Col>
 
           <Col>
