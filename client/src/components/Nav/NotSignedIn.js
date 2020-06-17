@@ -10,7 +10,8 @@ function Nav(props) {
       <nav className="navbar navbar-dark navbar-expand-lg bg-dark ">
         <div className="container">
           <a className="navbar-brand logo" href="/">
-            Chicken Tinder
+            Chicken Tinder{" "}
+            <image Src="../public/images/icons8-chicken-100.png"></image>
           </a>
           <button
             data-toggle="collapse"
