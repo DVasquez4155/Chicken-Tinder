@@ -14,18 +14,12 @@ const userSchema = new Schema({
     //ID
     yes: [{
         type: String,
-        required: true,
-        unique: true
     }],
     no: [{
         type: String,
-        required: true,
-        unique: true
     }],
     bookmarks: [{
         type: String,
-        required: true,
-        unique: true
     }]
 
 });

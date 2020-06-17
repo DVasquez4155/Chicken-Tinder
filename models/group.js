@@ -8,8 +8,7 @@ const groupSchema = new Schema({
     },
     users: [{
         type: String,
-        required: true,
-        unique: true
+        required: true
     }],
     uuid: {
         type: String, 
@@ -22,13 +21,11 @@ const groupSchema = new Schema({
     },
     matches: [{
         type: String, 
-        required: false,
-        unique: true
+        required: false
     }],
     businesses: [{
         type: String,
-        required: true,
-        unique: true
+        required: true
     }],
 });
 

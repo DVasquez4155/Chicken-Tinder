@@ -16,49 +16,52 @@ function getUsers(cb) {
   .catch(() => cb({}));
 }
 function match(groupId, businessId) {
-  db.Group.findOne({
-    "uuid": groupId,
-    matches: businessId
-  })
-  .then(result => {
-    console.log(result)
-  })
+  // console.log(businessId)
   db.Group.findOneAndUpdate(
     {"uuid": groupId},
     {$push: {matches: businessId} }
   )
-  // .catch((err) => error(err));
+  .then(result => {
+    // console.log(result)
+  })
+  .catch((err) => console.log(err));
 }
 
 module.exports = {
   yes: (req, res) => {
-    db.User.findOneAndUpdate(
-      {"id": req.body.id,},
-      {$push: { yes: req.body.businessId }}
-    )
-    .then(result => {
-      res.send(result)
-    })
-    .catch((err) => res.status(422).json(err));
-    
+    let alreadyDone = false;
     db.Group.findOne({
       "users": req.body.id,
     })
     .then(result => {
       getUsers(users => {
-        result.users.forEach((user, i) => {
-          result.users[i] = (users.find( ({ id }) => id === user ))
-        })
-        result.users.forEach(user => {
-          if (user.yes.includes( req.body.businessId )) {
-            if (!result.matches.includes(req.body.businessId)) {
-              match(result.uuid, req.body.businessId)
+        alreadyDone = result.matches.includes( req.body.businessId);
+        if (!alreadyDone) {
+          result.users.forEach((user, i) => {
+            result.users[i] = (users.find( ({ id }) => id === user ))
+          })
+          result.users.forEach(user => {
+            // console.log(user.yes)
+            // console.log(req.body.businessId)
+            if (user.yes.includes( req.body.businessId )) {
+                match(result.uuid, req.body.businessId)
             }
-          }
-        })
+          })
+        }
       })
+      
+      db.User.findOneAndUpdate(
+        {"id": req.body.id,},
+        {$push: { yes: req.body.businessId }}
+      )
+      .then(result => {
+        res.send(result)
+      })
+      .catch((err) => res.status(422).json(err));
     })
     .catch(err => err);
+
+    
   },
   no: (req, res) => {
     db.User.findOneAndUpdate(
@@ -133,17 +136,24 @@ module.exports = {
       name: req.body.name.trim(),
       id: userId,
     })
-    .catch((err) => res.status(422).json(err));
-    console.log(req.body)
-    db.Group.findOneAndUpdate({
-      uuid: req.body.id,
-    },
-    {$push: { users: userId }}
-    )
-    .then(result => {
-      res.json(userId)
+    .then(() => {
+      db.Group.findOneAndUpdate({
+        uuid: req.body.id,
+      },
+      {$push: { users: userId }}
+      )
+      .then(result => {
+        res.json(userId)
+      })
+      .catch(err => {
+        console.log(err)
+        res.status(422).json(err)
+      });
     })
-    .catch(err => error);
+    .catch(err => {
+      console.log(err)
+      res.status(422).json(err)
+    });
   },
 
   bookmark: (req, res) => {
