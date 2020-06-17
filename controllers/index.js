@@ -217,6 +217,9 @@ module.exports = {
         result.businesses.forEach((business, i) => {
           result.businesses[i] = (businesses.find( ({ id }) => id === business ))
         })
+        result.matches.forEach((business, i) => {
+          result.matches[i] = (businesses.find( ({ id }) => id === business ))
+        })
         res.json(result)
       })
     })
