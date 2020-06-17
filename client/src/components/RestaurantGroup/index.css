@@ -6,6 +6,9 @@ img {
   position: relative;
   bottom: 5px;
 }
+h1 {
+  text-align: center;
+}
 
 h5 {
   text-align: center;
@@ -18,17 +21,26 @@ h5 {
   text-align: center;
 }
 
+.button-Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-title {
+  text-align: center;
+  color: ;
+}
 p {
   text-align: center;
-  color: black;
+  color: #444444;
   font-weight: 500;
 }
 
 hr {
   border: 0;
   height: 0; /* Firefox... */
-  box-shadow: 0 0 10px 1px black;
-  background-color: rgb(69, 221, 82);
+  box-shadow: 0 0 10px 1px gray;
+  background-color: gray;
 }
 hr {
   /* Not really supposed to work, but does */
