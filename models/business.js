@@ -28,32 +28,25 @@ const businessSchema = new Schema({
     },
     price: {
         type: String,
-        required: true
     },
     location: {
         type: String,
-        required: true
     },
     phone: {
         type: String,
-        required: true
     },
     display_phone: {
         type: String,
-        required: true
     },
     distance: {
         type: String,
-        required: true
     },
 
     transactions: [{
         type: String,
-        required: true
     }],
     categories: [{
         type: String,
-        required: true
     }],
 });
 

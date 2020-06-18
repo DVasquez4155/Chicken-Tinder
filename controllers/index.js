@@ -1,7 +1,8 @@
 const { v4: uuidv4 } = require("uuid");
+const axios = require("axios")
 
 const db = require("../models");
-const fakeDb = require("../routes/api/businesses/Example.json")
+// const fakeDb = require("../routes/api/businesses/Example.json")
 
 function getBusinesses(cb) {
   db.Business.find({})
@@ -86,35 +87,54 @@ module.exports = {
     .catch((err) => res.status(422).json(err));
     const businesses = [];
     const businessId = []
-    fakeDb.businesses.forEach(business => {
-      const insertObj = {};
-      businessId.push(business.id)
-      insertObj.id = business.id
-      insertObj.name = business.name
-      insertObj.url = business.url
-      insertObj.image_url = business.image_url
-      insertObj.rating = business.rating
-      insertObj.price = business.price
-      insertObj.location = business.location.display_address.join(", ")
-      insertObj.phone = business.phone
-      insertObj.display_phone = business.display_phone
-      insertObj.display_address = business.display_phone
-      insertObj.distance = business.distance
-      insertObj.transactions = business.transactions
-      insertObj.categories = business.categories.map(e => e.title)
-      businesses.push(insertObj)
-    })
     
-    db.Business.insertMany(businesses)
-    .catch((err) => console.log(err));
-    db.Group.create({
-      users: [userId],
-      uuid: sessionId,
-      zipcode: parseInt(req.body.zip),
-      businesses: businessId
+    const locationSearched = parseInt(req.body.zip);
+    //offset
+    axios.get(`https://api.yelp.com/v3/businesses/search`, {
+      headers: {
+        Authorization: `Bearer ${process.env.YELP}`
+      },
+      params: {
+        location: locationSearched,
+        term: "restaurants",
+        // offset: offset,
+        limit: 50
+      }
     })
-    .then(() => res.json(userId))
-    .catch((err) => console.log(err));
+    .then((yelp) => {
+      yelp.data.businesses.forEach(business => {
+        const insertObj = {};
+        businessId.push(business.id)
+        insertObj.id = business.id
+        insertObj.name = business.name
+        insertObj.url = business.url
+        insertObj.image_url = business.image_url
+        insertObj.rating = business.rating
+        insertObj.price = business.price
+        insertObj.location = business.location.display_address.join(", ")
+        insertObj.phone = business.phone
+        insertObj.display_phone = business.display_phone
+        insertObj.display_address = business.display_phone
+        insertObj.distance = business.distance
+        insertObj.transactions = business.transactions
+        insertObj.categories = business.categories.map(e => e.title)
+        businesses.push(insertObj)
+      })
+      
+      db.Business.insertMany(businesses)
+      .catch((err) => console.log(err));
+      db.Group.create({
+        users: [userId],
+        uuid: sessionId,
+        zipcode: parseInt(req.body.zip),
+        businesses: businessId
+      })
+      .then(() => res.json(userId))
+      .catch((err) => console.log(err));
+    })
+    .catch((err) => {
+    console.log (err)
+    })
   },
   joinSession: (req, res) => {
     db.Group.findOne({

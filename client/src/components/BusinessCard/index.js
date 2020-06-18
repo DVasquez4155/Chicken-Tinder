@@ -14,6 +14,9 @@ require('./index.css')
 
 class BusinessCard extends React.Component {
     getItems(props) {
+        if (JSON.stringify(props) === "{}") {
+            return [{}]
+        }
         return [
             {
                 icon: faMapMarkerAlt,
@@ -80,6 +83,10 @@ class BusinessCard extends React.Component {
                 items.splice(i,1)
             }
         })
+        let dollars = ""
+        if (this.props.price) {
+            dollars = this.printDollar(this.props.price.length);
+        }
         return (
                 <div className='buisness-card'>
                     <div id='profile'>
@@ -112,7 +119,7 @@ class BusinessCard extends React.Component {
                             <Row>
                                 <Col>
                                     <span>
-                                        {this.printDollar(this.props.price.length)}
+                                        {dollars}
                                         <span> • </span>
                                         {this.props.categories.join(", ")}
                                     </span>
