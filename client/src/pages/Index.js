@@ -3,7 +3,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Col } from "react-bootstrap";
 //Pages
-import Landing from "./Index/Landing";
 import Login from "./Index/Login";
 import Users from "./Index/Users";
 import RegisterNewUser from "./Index/RegisterNewUser";
