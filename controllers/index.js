@@ -2,7 +2,7 @@ const { v4: uuidv4 } = require("uuid");
 const axios = require("axios")
 
 const db = require("../models");
-const key = require("./key1.json")
+const key = require("./key.json")
 // const fakeDb = require("../routes/api/businesses/Example.json")
 
 function getBusinesses(cb) {
@@ -93,7 +93,7 @@ module.exports = {
     //offset
     axios.get(`https://api.yelp.com/v3/businesses/search`, {
       headers: {
-        Authorization: `Bearer ${process.env.YELP}` || `Bearer ${true}`
+        Authorization: `Bearer ${process.env.YELP}` || `Bearer ${key.key}`
       },
       params: {
         location: locationSearched,
