@@ -20,7 +20,7 @@ const Index = ({ match }) => (
       <div className="main-landing-page p-responsive position-relative container-lg">
         <div className="d-md-flex flex-items-center gutter-md-spacious">
           <Col>
-            <h1 class="h000-mktg text-white lh-condensed-ultra mb-3">
+            <h1 className="h000-mktg text-white lh-condensed-ultra mb-3">
               Let us help determine your PLATE!!
             </h1>
 
